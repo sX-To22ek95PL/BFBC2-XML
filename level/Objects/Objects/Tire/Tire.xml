@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<partition guid="F6CCB4AA-E699-4400-93E4-983FC601977A" primaryInstance="20CE12D8-AB69-4E76-94E1-165C1CB6BBA1" exportMode="All">
+	<instance guid="20CE12D8-AB69-4E76-94E1-165C1CB6BBA1" type="Entity.ObjectBlueprint" id="Tire">
+		<field name="Name">Objects/Objects/Tire/Tire</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<array name="Objects" />
+		<array name="EventConnections" />
+		<array name="DataConnections" />
+		<field ref="null" name="Descriptor" />
+		<field ref="e2f18b53-a968-4f58-b6ce-9fdc564bbdfd" name="Object" />
+	</instance>
+	<instance guid="598AE961-0AA3-4055-A099-4BEF272B7E00" type="Physics.PhysicsEntityData">
+		<field ref="objects/objects/tire/tire_havok/bf5a540f-7803-11dc-8bf7-b4ce20f7b334" name="Asset" />
+		<field ref="null" name="FloatPhysics" />
+		<field name="Mass">15.0</field>
+		<field name="AllowZeroMayaMass">false</field>
+		<complex name="InertiaModifier">1.0/1.0/1.0/*nonzero*</complex>
+		<field name="Friction">1.0</field>
+		<field name="Restitution">0.5</field>
+		<field ref="null" name="Proximity" />
+	</instance>
+	<instance guid="E2F18B53-A968-4F58-B6CE-9FDC564BBDFD" type="GameSharedResources.DynamicModelEntityData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name">Objects/Objects/Tire/Tire</field>
+		<complex name="Transform">1.0/0/0/*nonzero*/0/1.0/0/*nonzero*/0/0/1.0/*nonzero*/0/0/0/*nonzero*</complex>
+		<field name="Enabled">true</field>
+		<field ref="598ae961-0aa3-4055-a099-4bef272b7e00" name="PhysicsData" />
+		<field name="Material">Rubber</field>
+		<field name="IsObsolete">false</field>
+		<field ref="null" name="ReplacementObject" />
+		<field name="TrackedByAI">false</field>
+		<field ref="09cdf0ad-4ffc-11e0-bf3f-cbc4fb3f961e" name="Part" />
+		<field ref="objects/objects/tire/tire_mesh/bf427c27-7803-11dc-aa59-c9dec36f3966" name="Mesh" />
+		<field ref="null" name="MeshShaderSet" />
+	</instance>
+	<instance guid="09CDF0AD-4FFC-11E0-BF3F-CBC4FB3F961E" type="GameSharedResources.PartComponentData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<complex name="Transform">1.0/0/0/*nonzero*/0/1.0/0/*nonzero*/0/0/1.0/*nonzero*/0/0/0/*nonzero*</complex>
+		<field name="Enabled">true</field>
+		<array name="HealthStates">
+			<item ref="09cdf0ae-4ffc-11e0-bf3f-cbc4fb3f961e" />
+		</array>
+		<array name="NeighbourLinks"></array>
+		<field name="IsSupported">false</field>
+		<field name="IsFragile">false</field>
+		<field name="IsLoadBearing">false</field>
+		<field name="CanTriggerCollapse">true</field>
+		<field name="CanCollapse">true</field>
+	</instance>
+	<instance guid="09CDF0AE-4FFC-11E0-BF3F-CBC4FB3F961E" type="GameSharedResources.HealthStateData">
+		<array name="Effects" />
+		<field ref="null" name="Explosion" />
+		<array name="LoosePartPhysicsArray" />
+		<field ref="null" name="SpawnedBanger" />
+		<field name="CopyDamageToBanger">true</field>
+		<field ref="null" name="LoosePartPhysics" />
+		<field ref="null" name="SpawnedBangerImpulseParams" />
+		<field name="MeshName">Tire</field>
+		<field name="PreferedShapeType">STBox</field>
+		<field name="Health">0</field>
+	</instance>
+</partition>

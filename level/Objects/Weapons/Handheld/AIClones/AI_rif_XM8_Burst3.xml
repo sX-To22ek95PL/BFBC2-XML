@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<partition guid="57E03676-3283-494A-80BD-6F293821364A" primaryInstance="C0A3A849-FC81-42DA-B1AB-B1F6D5266191" exportMode="All">
+	<instance guid="C0A3A849-FC81-42DA-B1AB-B1F6D5266191" type="GameSharedResources.WeaponFiringData" id="AI_rif_XM8_Burst3">
+		<field ref="91e19374-b4dc-4119-a2ac-75e16944badc" name="PrimaryFire" />
+		<field name="DeployTime">0.5</field>
+		<field name="ReactivateCooldownTime">0</field>
+		<field name="UseAutoAiming">false</field>
+		<field name="AutoSpotOnFire">false</field>
+		<field name="AutoSpotOnZoom">false</field>
+		<field name="SpottingDistance">350.0</field>
+		<field ref="null" name="WeaponSway" />
+		<field name="InflictSelfDamage">false</field>
+		<field name="FireOnDeploy">false</field>
+		<field name="AbortReloadOnSprint">false</field>
+		<array name="VOTypes" />
+		<complex name="Rumble">
+			<field name="LowRumble">0.600000023842</field>
+			<field name="HighRumble">0.300000011921</field>
+			<field name="RumbleDuration">0.119999997318</field>
+		</complex>
+		<field name="AiDamageModifier">1.0</field>
+	</instance>
+	<instance guid="91E19374-B4DC-4119-A2AC-75E16944BADC" type="GameSharedResources.FiringFunctionData">
+		<array name="Dispersion">
+			<complex>
+				<field name="MinAngle">1.0</field>
+				<field name="MaxAngle">4.0</field>
+				<field name="IncreasePerShot">-0.5</field>
+				<field name="DecreasePerSecond">-0.300000011921</field>
+			</complex>
+			<complex>
+				<field name="MinAngle">1.0</field>
+				<field name="MaxAngle">4.0</field>
+				<field name="IncreasePerShot">-0.5</field>
+				<field name="DecreasePerSecond">-0.300000011921</field>
+			</complex>
+		</array>
+		<complex name="WeaponDispersion">
+			<field name="JumpDispersionAngle">0</field>
+			<field name="ProneTransitionDispersionAngle">0</field>
+			<field name="MoveDispersionAngle">0</field>
+			<field name="MoveZoomedDispersionAngle">0</field>
+			<field name="DecreasePerSecond">0</field>
+		</complex>
+		<array name="FireEffects1p" />
+		<array name="FireEffects3p">
+			<complex>
+				<field ref="fx/weapons/muzzleflashes/specific/fx_muzz_us_rif_3p/fc5c09f3-93d7-4601-ad44-7aff8743c347" name="Effect" />
+				<complex name="Offset">0/0.0500000007451/0.899999976158/*nonzero*</complex>
+				<complex name="Rotation">0/0/0/*nonzero*</complex>
+				<complex name="ZoomOffset">0/0/0/*nonzero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*nonzero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+			<complex>
+				<field ref="fx/weapons/shells/fx_shellejection_s_right/033b9eb3-4de1-4896-800e-04808cdcdcfc" name="Effect" />
+				<complex name="Offset">0.019999999553/0.035000000149/0.449999988079/*nonzero*</complex>
+				<complex name="Rotation">0/0/0/*nonzero*</complex>
+				<complex name="ZoomOffset">0/0/0/*nonzero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*nonzero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</array>
+		<field ref="effects/weapons/soundeffects/ai_xm8_redford_burst_fire_sound/16c58db0-a364-4ed7-bc21-a6d1f4ef2d0f" name="FireSoundEffect" />
+		<field ref="null" name="ProjectileFireSound" />
+		<field ref="sound/weapons/deploy/generic_trigger_click/e5ba540f-ae7c-4f6c-b2cc-b3a87beec274" name="OutOfAmmoSoundEffect" />
+		<field ref="sound/weapons/reflections/reflections_556mm_burst/594bf6ba-c84c-46c5-a47a-e7b3a51fa96c" name="ReflectionSound" />
+		<complex name="Shot">
+			<complex name="InitialPosition">0/0/0/*zero*</complex>
+			<complex name="InitialDirection">0/0/1.0/*zero*</complex>
+			<complex name="InitialSpeed">0/0/300.0/*zero*</complex>
+			<field name="InheritWeaponSpeedAmount">0</field>
+			<field ref="null" name="MuzzleExplosion" />
+			<field ref="objects/weapons/handheld/aiclones/ai_rif_xm8_firing/43b9a209-7a09-48b7-9ff8-ede8ccbc64f5" name="ProjectileData" />
+			<field name="SpawnDelay">0</field>
+			<field name="NumberOfBulletsPerShell">1</field>
+			<field name="NumberOfBulletsPerShot">3</field>
+			<field name="RelativeTargetAiming">false</field>
+			<field name="ForceSpawnToCamera">false</field>
+			<field name="ActiveForceSpawnToCamera">true</field>
+		</complex>
+		<complex name="FireLogic">
+			<complex name="HoldAndRelease">
+				<field name="MaxHoldTime">10.0</field>
+				<field name="MinPowerModifier">0</field>
+				<field name="MaxPowerModifier">1.0</field>
+				<field name="PowerIncreasePerSecond">0.5</field>
+				<field name="Delay">0</field>
+				<field name="ForceFireWhenKilledHolding">true</field>
+				<field name="KilledHoldingPowerModifier">0</field>
+			</complex>
+			<complex name="BoltAction">
+				<field name="BoltActionDelay">0</field>
+				<field name="BoltActionTime">0</field>
+				<field name="HoldBoltActionUntilFireRelease">false</field>
+				<field name="HoldBoltActionUntilZoomRelease">false</field>
+			</complex>
+			<complex name="Recoil">
+				<field name="MaxRecoilAngleX">0</field>
+				<field name="MinRecoilAngleX">0</field>
+				<field name="MaxRecoilAngleY">0</field>
+				<field name="MinRecoilAngleY">0</field>
+				<field name="MaxRecoilAngleZ">0.5</field>
+				<field name="MinRecoilAngleZ">0.300000011921</field>
+				<field name="MaxRecoilFov">0.600000023842</field>
+				<field name="MinRecoilFov">0.300000011921</field>
+				<field name="RecoilFollowsDispersion">false</field>
+			</complex>
+			<field name="FireInputAction">EiaFire</field>
+			<field name="OrderInputAction">EiaOrder</field>
+			<field name="ReloadInputAction">EiaReload</field>
+			<field name="TriggerPullWeight">0.300000011921</field>
+			<field name="RateOfFire">750.0</field>
+			<field name="ClientFireRateMultiplier">1.0</field>
+			<field name="ReloadDelay">0</field>
+			<field name="ReloadTime">2.79999995232</field>
+			<field name="PostReloadSequenceTime">0</field>
+			<field name="ReloadThreshold">0</field>
+			<field name="PreFireDelay">0</field>
+			<field name="ZoomBeforeFireDelay">0</field>
+			<field name="WaitForTriggerRelease">true</field>
+			<field name="WaitForZoomRelease">false</field>
+			<field name="HoldReloadUntilFireRelease">false</field>
+			<field name="HoldReloadUntilZoomRelease">false</field>
+			<field name="ReloadLogic">rlWeaponSwitchCancelsUnfinishedReload</field>
+			<field name="ReloadType">rtMagazine</field>
+			<field name="FireLogicType">fltSingleFire</field>
+		</complex>
+		<complex name="Ammo">
+			<field name="MagazineCapacity">30</field>
+			<field name="NumberOfMagazines">-1</field>
+			<field name="TraceFrequency">1</field>
+			<field name="AmmoPickupMinAmount">30</field>
+			<field name="AmmoPickupMaxAmount">60</field>
+			<field name="AutoReplenishMagazine">false</field>
+			<field name="AutoReplenishDelay">10.0</field>
+			<field name="AmmoBoxPickupRate">1</field>
+			<field name="AmmoBoxPickupAmount">-1</field>
+		</complex>
+		<complex name="OverHeat">
+			<field name="HeatPerBullet">0</field>
+			<field name="HeatDropPerSecond">0</field>
+			<field name="OverHeatPenaltyTime">0</field>
+			<field name="OverHeatThreshold">0.800000011921</field>
+			<complex name="OverHeatEffect">
+				<field ref="null" name="Effect" />
+				<complex name="Offset">0/0/0/*zero*</complex>
+				<complex name="Rotation">0/0/0/*zero*</complex>
+				<complex name="ZoomOffset">0/0/0/*zero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*zero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</complex>
+		<field name="UsePrimaryAmmo">true</field>
+		<field name="UnlimitedAmmoForAI">false</field>
+		<field name="LoopingFireSound">true</field>
+		<field name="SelfHealTimeWhenDeployed">0</field>
+		<field name="IsCounterMeasureWeapon">false</field>
+	</instance>
+</partition>

@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+<partition guid="A58A8681-1BF0-4ECE-BDA9-7784267E1F14" primaryInstance="6F784EE1-EC40-4751-A0D2-D4DE355AFC74" exportMode="All">
+	<instance guid="77631AE8-2DF7-4D3D-99EE-BA771ED9899C" type="Emitter.EmitterDocument">
+		<field name="Name">FX/Vehicles/Exhaust/Small/Emitter_S/Em_Exhaust_SmokeXZ_S_01</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<array name="EmitterComponents">
+			<item ref="5c41dbbe-c27a-495d-aa13-f4fe39b5f6cc" />
+		</array>
+		<array name="EmitterComponentConnections" />
+		<array name="ProcessorConnections" />
+		<field ref="5c41dbbe-c27a-495d-aa13-f4fe39b5f6cc" name="RootProcessor" />
+		<field ref="6f784ee1-ec40-4751-a0d2-d4de355afc74" name="TemplateData" />
+	</instance>
+	<instance guid="6F784EE1-EC40-4751-A0D2-D4DE355AFC74" type="Emitter.EmitterTemplateData" id="Em_Exhaust_SmokeXZ_S_01">
+		<field ref="b83bc81c-de13-49b4-9359-b248eece93b9" name="RootProcessor" />
+		<field name="MaxCount">7</field>
+		<field name="Name">FX/Vehicles/Exhaust/Small/Emitter_S/Em_Exhaust_SmokeXZ_S_01</field>
+		<field name="Lifetime">0</field>
+		<field name="LifetimeFrameCount">0</field>
+		<field name="FollowSpawnSource">false</field>
+		<field name="KillParticlesWithEmitter">false</field>
+		<field name="VisibleAfterDistance">0</field>
+		<field name="OverrideScreenAreaCulling">false</field>
+		<field name="EmittableType">ScreenAlignedQuad</field>
+		<field ref="null" name="Mesh" />
+		<array name="CompositeMeshPartNames"></array>
+		<field ref="null" name="Physics" />
+		<field ref="null" name="FloatPhysics" />
+		<field ref="null" name="PhysicsData" />
+		<field name="Emissive">false</field>
+		<field name="Opaque">false</field>
+		<field name="VertexPixelLightingBlendFactor">0</field>
+		<field name="GlobalLocalNormalBlendFactor">1.0</field>
+		<field name="AmbientLightBlendFactor">1.0</field>
+		<field name="AlphaAsColorBlendFactor">0</field>
+		<field name="SoftParticlesFadeDistanceMultiplier">0</field>
+		<field name="ForceNiceSorting">false</field>
+		<field name="LocalSpace">false</field>
+		<field name="MaxDistanceForScaling">100.0</field>
+		<field name="DistanceScaleMinClamp">1.0</field>
+		<field name="DistanceScaleMaxClamp">2.0</field>
+		<field name="ActAsPointLight">false</field>
+		<complex name="PointLightColor">1.0/1.0/1.0/*nonzero*</complex>
+		<field name="PointLightRadius">20.0</field>
+		<field name="PointLightFadeStartDistance">25.0</field>
+		<field name="PointLightFadeEndDistance">30.0</field>
+		<complex name="PointLightPivot">0/0/0/*nonzero*</complex>
+		<field name="PointLightRandomIntensityMin">1.0</field>
+		<field name="PointLightRandomIntensityMax">1.0</field>
+		<complex name="PointLightIntensity">0/0/0/1.0</complex>
+		<field name="PointLightMinClamp">0</field>
+		<field name="PointLightMaxClamp">1.0</field>
+		<field name="ParticleCullingFactor">0.800000011921</field>
+		<field name="MaxSpawnDistance">0</field>
+		<field name="MinScreenArea">1.0</field>
+		<field name="MeshCullingDistance">0</field>
+		<field name="FreezeParticleOnSleep">false</field>
+		<array name="ZOcclusionLookup"></array>
+	</instance>
+	<instance guid="5C41DBBE-C27A-495D-AA13-F4FE39B5F6CC" type="Emitter.BaseEmitterData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="null" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtBaseEmitter</field>
+		<field name="Enable">false</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field ref="fx/vehicles/exhaust/_template/em_exaust_template_exaustsmoke/3fe9feb8-2793-4190-b32d-f45ce16ee450" name="EmitterAsset" />
+	</instance>
+	<instance guid="B83BC81C-DE13-49B4-9359-B248EECE93B9" type="Emitter.SpawnRateData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="c659dfbc-198d-4934-b392-a12f5641892d" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnRate</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="SpawnRate">20.0</field>
+		<field name="TrailSegmentLength">5.0</field>
+		<field name="DynamicFrequencyAreaClamp">0.800000011921</field>
+		<field name="DistributeOverTime">false</field>
+		<field name="DistributeOverDistance">false</field>
+	</instance>
+	<instance guid="C659DFBC-198D-4934-B392-A12F5641892D" type="Emitter.SpawnSpeedData">
+		<field ref="09556d8a-6c91-44ee-8f66-4cfe9a4ead6f" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="3bab86eb-9ecd-4405-87e1-c3b7919ec9d8" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnSpeed</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="Speed">2.0</field>
+	</instance>
+	<instance guid="09556D8A-6C91-44EE-8F66-4CFE9A4EAD6F" type="Emitter.RandomEvaluatorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtRandom</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<field name="Max">1.25</field>
+		<field name="Min">0.75</field>
+	</instance>
+	<instance guid="3BAB86EB-9ECD-4405-87E1-C3B7919EC9D8" type="Emitter.SpawnPositionData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="d0366057-c079-47e2-a3c9-bd25bb3e146e" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnPosition</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">0/0/0/1.0</complex>
+		<field name="WaitingForUbbe">true</field>
+	</instance>
+	<instance guid="D0366057-C079-47E2-A3C9-BD25BB3E146E" type="Emitter.SpawnDirectionData">
+		<field ref="72c89f4e-e1c5-4118-98eb-c93b1165f35b" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="c73bdbb9-2ff1-4581-9381-0b45a7e046de" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnDirection</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">0/1.0/0/*zero*</complex>
+		<field name="WaitingForUbbe">true</field>
+		<field name="InheritSpeedAndDirectionFromEmitter">true</field>
+	</instance>
+	<instance guid="72C89F4E-E1C5-4118-98EB-C93B1165F35B" type="Emitter.RotateVectorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtRotateVector</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<field name="Angle">10.0</field>
+		<field name="RotateWithinPlane">false</field>
+	</instance>
+	<instance guid="C73BDBB9-2FF1-4581-9381-0B45A7E046DE" type="Emitter.SpawnSizeData">
+		<field ref="0902564a-2306-4ee1-8df1-f2dc2fd427e1" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="3189d7a1-5dba-4998-ba72-1ba34c2c9839" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnSize</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="Size">0.40000000596</field>
+	</instance>
+	<instance guid="0902564A-2306-4EE1-8DF1-F2DC2FD427E1" type="Emitter.RandomEvaluatorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtRandom</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<field name="Max">1.0</field>
+		<field name="Min">0.5</field>
+	</instance>
+	<instance guid="3189D7A1-5DBA-4998-BA72-1BA34C2C9839" type="Emitter.SpawnAnimationData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="f9d02c64-552d-4d40-9f30-43a371a57b60" name="NextProcessor" />
+		<field name="Edited">true</field>
+		<field name="ProcessorType">PtSpawnAnimation</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">0/0/0/*zero*</complex>
+		<field name="AnimationSpeed">0</field>
+	</instance>
+	<instance guid="F9D02C64-552D-4D40-9F30-43A371A57B60" type="Emitter.SpawnAnimationFrameData">
+		<field ref="37340da1-0f42-45cf-be28-c06f4ab3c357" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="b4223d89-ecb5-45f7-be7b-6d9a2246b1e5" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnAnimationFrame</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">0/0/0/*zero*</complex>
+		<field name="AnimationFrame">1</field>
+	</instance>
+	<instance guid="37340DA1-0F42-45CF-BE28-C06F4AB3C357" type="Emitter.RandomEvaluatorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtRandom</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<field name="Max">4.0</field>
+		<field name="Min">0</field>
+	</instance>
+	<instance guid="B4223D89-ECB5-45F7-BE7B-6D9A2246B1E5" type="Emitter.SpawnRotationData">
+		<field ref="0e139d7b-d4d0-472b-9e81-ca8ffa8258e2" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="e2bd178f-e40c-4294-b88b-b3fb093e8079" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnRotation</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="Rotation">1.0</field>
+	</instance>
+	<instance guid="0E139D7B-D4D0-472B-9E81-CA8FFA8258E2" type="Emitter.RandomEvaluatorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtRandom</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<field name="Max">1.0</field>
+		<field name="Min">-1.0</field>
+	</instance>
+	<instance guid="E2BD178F-E40C-4294-B88B-B3FB093E8079" type="Emitter.SpawnRotationSpeedData">
+		<field ref="d17de0a2-972e-486e-8756-dd0707945e57" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="b1159e7a-d1d4-42ea-94ff-0ab8cad4a006" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtSpawnRotationSpeed</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="RotationSpeed">0.300000011921</field>
+	</instance>
+	<instance guid="D17DE0A2-972E-486E-8756-DD0707945E57" type="Emitter.RandomEvaluatorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtRandom</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<field name="Max">-1.0</field>
+		<field name="Min">1.0</field>
+	</instance>
+	<instance guid="B1159E7A-D1D4-42EA-94FF-0AB8CAD4A006" type="Emitter.UpdateAgeData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="a541d7f9-4c49-4a67-950b-561071e7fb02" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateAge</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">false</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="Lifetime">0.300000011921</field>
+	</instance>
+	<instance guid="A541D7F9-4C49-4A67-950B-561071E7FB02" type="Emitter.GravityData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="d2214cc4-12ad-4c77-9933-0f526be00e3a" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtGravity</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="Gravity">-1.0</field>
+	</instance>
+	<instance guid="D2214CC4-12AD-4C77-9933-0F526BE00E3A" type="Emitter.AirResistanceData">
+		<field ref="d1ab1061-c57e-4f49-96eb-16ba32a4e4e4" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="35c140b6-155c-11df-9ca7-e8c6edffa3b9" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtAirResistance</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="DragFactor">0.0500000007451</field>
+	</instance>
+	<instance guid="D1AB1061-C57E-4F49-96EB-16BA32A4E4E4" type="Emitter.PolynomialData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtPolynomial</field>
+		<field name="EmitterParameter">EmitterParameter1</field>
+		<complex name="Coefficients">0/0/0/1.0</complex>
+		<field name="ScaleValue">0.5</field>
+		<field name="MinClamp">1.0</field>
+		<field name="MaxClamp">1.0</field>
+	</instance>
+	<instance guid="35C140B6-155C-11DF-9CA7-E8C6EDFFA3B9" type="Emitter.UpdateLinearVelocityData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="35c140a2-155c-11df-9ca7-e8c6edffa3b9" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateLinearVelocity</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="WaitingForUbbe">true</field>
+	</instance>
+	<instance guid="35C140A2-155C-11DF-9CA7-E8C6EDFFA3B9" type="Emitter.UpdateOrientationData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="35c140b7-155c-11df-9ca7-e8c6edffa3b9" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateOrientation</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="WaitingForUbbe">true</field>
+	</instance>
+	<instance guid="35C140B7-155C-11DF-9CA7-E8C6EDFFA3B9" type="Emitter.UpdateBoundingBoxData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="6ba4ba72-ae04-4a8c-9fb4-46d916c6790b" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateBoundingBox</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="WaitingForUbbe">true</field>
+	</instance>
+	<instance guid="6BA4BA72-AE04-4A8C-9FB4-46D916C6790B" type="Emitter.UpdateColorData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="ab153dc5-1cca-4317-bc9f-9de6c474d3aa" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateColor</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">0.0260000005364/0.0299999993294/0.0309999994934/1.0</complex>
+		<complex name="Color">0.0260000005364/0.0299999993294/0.0309999994934/*nonzero*</complex>
+	</instance>
+	<instance guid="AB153DC5-1CCA-4317-BC9F-9DE6C474D3AA" type="Emitter.UpdateTransparencyData">
+		<field ref="f16f9daa-4947-4a81-9ea9-c0e6078dcd81" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="9d6fdaf1-582c-485f-87fd-2359f9429b72" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateTransparency</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="CullThreshold">0.20000000298</field>
+	</instance>
+	<instance guid="F16F9DAA-4947-4A81-9EA9-C0E6078DCD81" type="Emitter.PolynomialData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtPolynomial</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<complex name="Coefficients">0/-3.96549296379/3.97442150116/*zero*</complex>
+		<field name="ScaleValue">0.5</field>
+		<field name="MinClamp">0</field>
+		<field name="MaxClamp">1.0</field>
+	</instance>
+	<instance guid="9D6FDAF1-582C-485F-87FD-2359F9429B72" type="Emitter.UpdateTextureCoordsData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="8f9215ac-9a55-4c3a-bbc3-169986386b76" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateTextureCoords</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/0/0/*zero*</complex>
+		<complex name="TextureInfo1">
+			<field ref="87952665-4b39-4adc-b8a8-77914054f184" name="Texture" />
+			<field ref="48092cba-edea-4e6b-8ae8-74d6c7563447" name="Normalmap" />
+			<field name="AnimationFrameCount">4.0</field>
+			<field name="AnimationFrameColumnCount">2.0</field>
+			<field name="TextureOriginU">0.00146484375</field>
+			<field name="TextureOriginV">0.00146484375</field>
+			<field name="AnimationStepU">0.12353515625</field>
+			<field name="AnimationStepV">0.12353515625</field>
+			<field name="NmTextureOriginU">0.5029296875</field>
+			<field name="NmTextureOriginV">0.0029296875</field>
+			<field name="NmAnimationStepU">0.2470703125</field>
+			<field name="NmAnimationStepV">0.2470703125</field>
+			<field name="EnableAnimation">true</field>
+		</complex>
+		<field name="TextureBlendValue">1.0</field>
+	</instance>
+	<instance guid="8F9215AC-9A55-4C3A-BBC3-169986386B76" type="Emitter.UpdateRotationData">
+		<field ref="cdc5ea3f-9e26-4f37-b850-604faa00fc25" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="074ca728-0315-4089-99c3-284dd5dcbb0b" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateRotation</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/0/0/*zero*</complex>
+		<complex name="TextureInfo1">
+			<field ref="87952665-4b39-4adc-b8a8-77914054f184" name="Texture" />
+			<field ref="48092cba-edea-4e6b-8ae8-74d6c7563447" name="Normalmap" />
+			<field name="AnimationFrameCount">4.0</field>
+			<field name="AnimationFrameColumnCount">2.0</field>
+			<field name="TextureOriginU">0.00146484375</field>
+			<field name="TextureOriginV">0.00146484375</field>
+			<field name="AnimationStepU">0.12353515625</field>
+			<field name="AnimationStepV">0.12353515625</field>
+			<field name="NmTextureOriginU">0.5029296875</field>
+			<field name="NmTextureOriginV">0.0029296875</field>
+			<field name="NmAnimationStepU">0.2470703125</field>
+			<field name="NmAnimationStepV">0.2470703125</field>
+			<field name="EnableAnimation">true</field>
+		</complex>
+	</instance>
+	<instance guid="87952665-4B39-4ADC-B8A8-77914054F184" type="Render.TextureAsset">
+		<field name="Name">Textures/Effects/Smoke/SmokeThick_03_2x2_C</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<field name="OutputFormat">TofDefault</field>
+		<complex name="NormalMapGeneration">
+			<field name="NormalMapConversionEnabled">false</field>
+			<field name="MinZ">0</field>
+			<field name="Scale">1.0</field>
+			<field name="FilterKernel">Nmf3x3</field>
+			<field name="HeightConversionMethod">HcmAverageRGB</field>
+			<field name="AlphaResult">ArtUnchanged</field>
+			<field name="Wrap">false</field>
+			<field name="InvertX">false</field>
+			<field name="InvertY">true</field>
+			<field name="InvertZ">false</field>
+			<field name="AddHeightMap">false</field>
+			<field name="NormalMapSwapRGB">false</field>
+		</complex>
+		<field name="Gamma">TagDefault</field>
+		<field name="Usage">TuDefault</field>
+		<field name="SkipMipmaps">0</field>
+		<field name="SkipMipmapsPs3">666</field>
+		<field name="SkipMipmapsXenon">666</field>
+		<field name="ResourceName" />
+		<field name="SharpenMipmapsAlpha">false</field>
+		<field name="GenerateMipmaps">true</field>
+		<field name="ResizeToPowerOf2">true</field>
+		<field name="Ps3MemoryType">PmtDefault</field>
+	</instance>
+	<instance guid="48092CBA-EDEA-4E6B-8AE8-74D6C7563447" type="Render.TextureAsset">
+		<field name="Name">Textures/Effects/Smoke/SmokeThick_03_2x2_Nm</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<field name="OutputFormat">TofDefault</field>
+		<complex name="NormalMapGeneration">
+			<field name="NormalMapConversionEnabled">false</field>
+			<field name="MinZ">0</field>
+			<field name="Scale">1.0</field>
+			<field name="FilterKernel">Nmf3x3</field>
+			<field name="HeightConversionMethod">HcmAverageRGB</field>
+			<field name="AlphaResult">ArtUnchanged</field>
+			<field name="Wrap">false</field>
+			<field name="InvertX">false</field>
+			<field name="InvertY">true</field>
+			<field name="InvertZ">false</field>
+			<field name="AddHeightMap">false</field>
+			<field name="NormalMapSwapRGB">false</field>
+		</complex>
+		<field name="Gamma">TagDefault</field>
+		<field name="Usage">TuDefault</field>
+		<field name="SkipMipmaps">0</field>
+		<field name="SkipMipmapsPs3">666</field>
+		<field name="SkipMipmapsXenon">666</field>
+		<field name="ResourceName" />
+		<field name="SharpenMipmapsAlpha">false</field>
+		<field name="GenerateMipmaps">true</field>
+		<field name="ResizeToPowerOf2">true</field>
+		<field name="Ps3MemoryType">PmtDefault</field>
+	</instance>
+	<instance guid="CDC5EA3F-9E26-4F37-B850-604FAA00FC25" type="Emitter.PolynomialData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtPolynomial</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<complex name="Coefficients">0/0/0.947598278522/0.0176232587546</complex>
+		<field name="ScaleValue">1.0</field>
+		<field name="MinClamp">0</field>
+		<field name="MaxClamp">1.0</field>
+	</instance>
+	<instance guid="074CA728-0315-4089-99C3-284DD5DCBB0B" type="Emitter.UpdateSizeData">
+		<field ref="6d6cb211-f05c-443d-a2bc-6b7b3f1bd30e" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="82c2e533-9aed-4378-9046-2c213304c928" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateSize</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<complex name="Pivot">0/0</complex>
+	</instance>
+	<instance guid="503E7801-E113-4F8D-ABE3-E236DCF605C8" type="Render.TextureAsset">
+		<field name="Name">Textures/Effects/EmitterSystem/defaultNormalmap</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<field name="OutputFormat">TofDefault</field>
+		<complex name="NormalMapGeneration">
+			<field name="NormalMapConversionEnabled">false</field>
+			<field name="MinZ">0</field>
+			<field name="Scale">1.0</field>
+			<field name="FilterKernel">Nmf3x3</field>
+			<field name="HeightConversionMethod">HcmAverageRGB</field>
+			<field name="AlphaResult">ArtUnchanged</field>
+			<field name="Wrap">false</field>
+			<field name="InvertX">false</field>
+			<field name="InvertY">true</field>
+			<field name="InvertZ">false</field>
+			<field name="AddHeightMap">false</field>
+			<field name="NormalMapSwapRGB">false</field>
+		</complex>
+		<field name="Gamma">TagDefault</field>
+		<field name="Usage">TuDefault</field>
+		<field name="SkipMipmaps">2</field>
+		<field name="SkipMipmapsPs3">666</field>
+		<field name="SkipMipmapsXenon">666</field>
+		<field name="ResourceName" />
+		<field name="SharpenMipmapsAlpha">false</field>
+		<field name="GenerateMipmaps">true</field>
+		<field name="ResizeToPowerOf2">true</field>
+		<field name="Ps3MemoryType">PmtDefault</field>
+	</instance>
+	<instance guid="6D6CB211-F05C-443D-A2BC-6B7B3F1BD30E" type="Emitter.PolynomialData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtPolynomial</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<complex name="Coefficients">0/-0.00754481554031/0.652225852013/0.333858728409</complex>
+		<field name="ScaleValue">1.0</field>
+		<field name="MinClamp">0</field>
+		<field name="MaxClamp">1.0</field>
+	</instance>
+	<instance guid="82C2E533-9AED-4378-9046-2C213304C928" type="Emitter.UpdateAlphaLevelScaleData">
+		<field ref="b8bf6275-530b-4e8d-94a3-62e564927c2d" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="35c140b5-155c-11df-9ca7-e8c6edffa3b9" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateAlphaLevelScale</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<field name="Exponent">1.0</field>
+	</instance>
+	<instance guid="B8BF6275-530B-4E8D-94A3-62E564927C2D" type="Emitter.PolynomialData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field name="EvaluatorType">EtPolynomial</field>
+		<field name="EmitterParameter">EmitterParameterNone</field>
+		<complex name="Coefficients">0/0/0/1.00892841816</complex>
+		<field name="ScaleValue">1.0</field>
+		<field name="MinClamp">1.0</field>
+		<field name="MaxClamp">1.0</field>
+	</instance>
+	<instance guid="35C140B5-155C-11DF-9CA7-E8C6EDFFA3B9" type="Emitter.UpdateClipScaleData">
+		<field ref="null" name="Pre" />
+		<field ref="null" name="Post" />
+		<field name="Deprecated">false</field>
+		<field ref="null" name="NextProcessor" />
+		<field name="Edited">false</field>
+		<field name="ProcessorType">PtUpdateClipScale</field>
+		<field name="Enable">true</field>
+		<field name="EvaluatorInput">EfNormTime</field>
+		<field name="AcceptsEvaluator">true</field>
+		<complex name="DefaultValues">1.0/1.0/1.0/1.0</complex>
+		<array name="Lookup">0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875/0.9453125/0.9921875/1.0/0.9921875</array>
+	</instance>
+</partition>

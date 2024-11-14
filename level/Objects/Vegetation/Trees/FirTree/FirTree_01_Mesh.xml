@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<partition guid="8FA8233F-BA8C-11DB-8737-CA92CE4918FB" primaryInstance="8FA5C152-BA8C-11DB-8737-CA92CE4918FB" exportMode="All">
+	<instance guid="8FA5C152-BA8C-11DB-8737-CA92CE4918FB" type="Render.TreeMeshAsset" id="FirTree_01_Mesh">
+		<field name="Name">Objects/Vegetation/Trees/FirTree/FirTree_01_Mesh</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<field name="SourceFile">Objects/Vegetation/Trees/FirTree/FirTree_01.mb</field>
+		<field name="RootNode">export</field>
+		<field name="LodCount">2</field>
+		<field ref="systems/mesh/defaultmeshlodsettings/fe6e98e6-4777-46f1-a76c-743490b29b3a" name="LodSettings" />
+		<array name="SurfaceShaders" />
+		<field name="ZOnlyMesh">true</field>
+		<array name="KeepZOnlyVertexElements">
+			<item>texcoord0</item>
+		</array>
+		<array name="ExcludeZOnlyMaterials" />
+		<field name="StreamInstancingEnable">false</field>
+		<field name="CompressPositionsEnable">true</field>
+		<field name="ManualDrawOrderEnable">true</field>
+		<field name="GenerateOcclusionTexture">false</field>
+		<array name="CulledOcclusionTextureShaders" />
+		<field name="OcclusionTextureResolution">1024</field>
+		<field name="OcclusionTextureQuality">3</field>
+		<field name="OcclusionMaxDistance">1.0</field>
+		<field name="OcclusionContrast">1.0</field>
+		<field name="OcclusionFallOff">0</field>
+		<field ref="null" name="OcclusionTexture" />
+		<field name="StreamingEnable">false</field>
+		<field name="TangentSpaceBasisEnable">true</field>
+		<field name="IrradianceVolumeEnable">false</field>
+		<field name="OccluderMeshEnable">true</field>
+		<field name="OccluderMeshNode">occluder</field>
+		<field name="HighPriorityOccluderMesh">false</field>
+		<field name="Ps3EdgeEnable">true</field>
+		<field name="Ps3EdgeScoreErrorWorkaroundEnable">false</field>
+		<field name="Ps3SootEdgeEnable">true</field>
+		<field name="Ps3SootEdgeScoreErrorWorkaroundEnable">false</field>
+		<array name="ShaderSets">
+			<item ref="fe00a802-2ca2-0b1d-2b59-36d4b27b8360" />
+		</array>
+		<field name="RadiosityMesh">false</field>
+		<field ref="null" name="RadiosityAlbedoTexture" />
+		<field name="MovableParts">false</field>
+		<field name="MergeMeshMaterials">true</field>
+		<field name="SootType">StDisabled</field>
+		<field name="SootVoxelSize">3.0</field>
+		<field name="SootSplitableTriangleEdgeLength">1.0</field>
+		<field ref="null" name="MaterialMaskingMesh" />
+		<field ref="null" name="Sectorization" />
+		<field ref="2b6945c5-4b4d-11e0-a1a0-ab6661ce82f8" name="BillboardShader" />
+		<field name="BillboardResolutionX">256</field>
+		<field name="BillboardResolutionY">512</field>
+		<field name="Bendable">false</field>
+		<field name="AffectedByWind">1.0</field>
+		<field name="BranchesAffectedByWind">1.0</field>
+		<field name="LodScale">1.0</field>
+		<field name="CutMaterialCount">1</field>
+		<field name="CoverageValue">0.600000023842</field>
+	</instance>
+	<instance guid="FE00A802-2CA2-0B1D-2B59-36D4B27B8360" type="Render.MeshShaderSetAsset">
+		<field name="Name">Objects/Vegetation/Trees/FirTree/FirTree_01_Mesh</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<array name="SurfaceShaders">
+			<complex>
+				<field name="Name">Branch</field>
+				<field ref="vegetation/snow/shaders/bark_1/ce307308-251f-404e-8a0a-3a508ee8a451" name="Shader" />
+			</complex>
+			<complex>
+				<field name="Name">Frond</field>
+				<field ref="vegetation/snow/shaders/branch_firtree_2/b85bab06-245a-426c-8236-4404d9f499c6" name="Shader" />
+			</complex>
+			<complex>
+				<field name="Name">Cut</field>
+				<field ref="vegetation/snow/shaders/wood_cut_1/595c1e15-3d49-49f0-bb95-b6922a8ed0b0" name="Shader" />
+			</complex>
+			<complex>
+				<field name="Name">Needles_Shadow</field>
+				<field ref="vegetation/snow/shaders/shadows/shadow_trees_1/5004ce7d-6e45-4983-b10a-9033bbee959b" name="Shader" />
+			</complex>
+		</array>
+	</instance>
+	<instance guid="2B6945C5-4B4D-11E0-A1A0-AB6661CE82F8" type="Render.ShaderAsset">
+		<field name="Name">Vegetation/Snow/Shaders/Billboards/Billboard_FirTree_2</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+	</instance>
+</partition>

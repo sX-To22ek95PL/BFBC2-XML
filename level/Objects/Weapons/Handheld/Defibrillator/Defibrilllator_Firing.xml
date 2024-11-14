@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<partition guid="1F63D249-5F7E-4035-8287-E76FDC5C00DB" primaryInstance="B2FE936E-6AC4-412C-80EF-83384A310C3F" exportMode="All">
+	<instance guid="B2FE936E-6AC4-412C-80EF-83384A310C3F" type="GameSharedResources.WeaponFiringData" id="Defibrilllator_Firing">
+		<field ref="f531f329-5697-40d2-91a6-b5184bd5a543" name="PrimaryFire" />
+		<field name="DeployTime">0.5</field>
+		<field name="ReactivateCooldownTime">0</field>
+		<field name="UseAutoAiming">false</field>
+		<field name="AutoSpotOnFire">false</field>
+		<field name="AutoSpotOnZoom">false</field>
+		<field name="SpottingDistance">350.0</field>
+		<field ref="null" name="WeaponSway" />
+		<field name="InflictSelfDamage">false</field>
+		<field name="FireOnDeploy">false</field>
+		<field name="AbortReloadOnSprint">false</field>
+		<array name="VOTypes">
+			<item ref="sound/vo/types/155f5c64-4c12-4267-904d-73df850376dc" />
+			<item ref="sound/vo/types/9e6e33e7-7ea1-40d5-9274-cc0139393e91" />
+		</array>
+		<complex name="Rumble">
+			<field name="LowRumble">0</field>
+			<field name="HighRumble">0</field>
+			<field name="RumbleDuration">0.20000000298</field>
+		</complex>
+		<field name="AiDamageModifier">1.0</field>
+	</instance>
+	<instance guid="F531F329-5697-40D2-91A6-B5184BD5A543" type="GameSharedResources.FiringFunctionData">
+		<array name="Dispersion">
+			<complex>
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">0.0250000003725</field>
+				<field name="IncreasePerShot">0</field>
+				<field name="DecreasePerSecond">0</field>
+			</complex>
+			<complex>
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">0.0250000003725</field>
+				<field name="IncreasePerShot">0</field>
+				<field name="DecreasePerSecond">0</field>
+			</complex>
+		</array>
+		<complex name="WeaponDispersion">
+			<field name="JumpDispersionAngle">0</field>
+			<field name="ProneTransitionDispersionAngle">0</field>
+			<field name="MoveDispersionAngle">0</field>
+			<field name="MoveZoomedDispersionAngle">0</field>
+			<field name="DecreasePerSecond">0</field>
+		</complex>
+		<array name="FireEffects1p" />
+		<array name="FireEffects3p" />
+		<field ref="effects/weapons/soundeffects/defibrillator_fire_sound/e41d87bc-93d8-4b59-88a9-b716ab5c3e83" name="FireSoundEffect" />
+		<field ref="null" name="ProjectileFireSound" />
+		<field ref="null" name="OutOfAmmoSoundEffect" />
+		<field ref="null" name="ReflectionSound" />
+		<complex name="Shot">
+			<complex name="InitialPosition">0/0/0.10000000149/*zero*</complex>
+			<complex name="InitialDirection">0/0/1.0/*zero*</complex>
+			<complex name="InitialSpeed">0/0/1.60000002384/*zero*</complex>
+			<field name="InheritWeaponSpeedAmount">0</field>
+			<field ref="null" name="MuzzleExplosion" />
+			<field ref="2004a829-b505-4392-b205-ca729a163a51" name="ProjectileData" />
+			<field name="SpawnDelay">0.10000000149</field>
+			<field name="NumberOfBulletsPerShell">1</field>
+			<field name="NumberOfBulletsPerShot">1</field>
+			<field name="RelativeTargetAiming">false</field>
+			<field name="ForceSpawnToCamera">false</field>
+			<field name="ActiveForceSpawnToCamera">true</field>
+		</complex>
+		<complex name="FireLogic">
+			<complex name="HoldAndRelease">
+				<field name="MaxHoldTime">3.0</field>
+				<field name="MinPowerModifier">0</field>
+				<field name="MaxPowerModifier">1.0</field>
+				<field name="PowerIncreasePerSecond">-0.330000013113</field>
+				<field name="Delay">0</field>
+				<field name="ForceFireWhenKilledHolding">true</field>
+				<field name="KilledHoldingPowerModifier">0</field>
+			</complex>
+			<complex name="BoltAction">
+				<field name="BoltActionDelay">0</field>
+				<field name="BoltActionTime">0</field>
+				<field name="HoldBoltActionUntilFireRelease">false</field>
+				<field name="HoldBoltActionUntilZoomRelease">false</field>
+			</complex>
+			<complex name="Recoil">
+				<field name="MaxRecoilAngleX">0</field>
+				<field name="MinRecoilAngleX">0</field>
+				<field name="MaxRecoilAngleY">0</field>
+				<field name="MinRecoilAngleY">0</field>
+				<field name="MaxRecoilAngleZ">0</field>
+				<field name="MinRecoilAngleZ">0</field>
+				<field name="MaxRecoilFov">0</field>
+				<field name="MinRecoilFov">0</field>
+				<field name="RecoilFollowsDispersion">true</field>
+			</complex>
+			<field name="FireInputAction">EiaFire</field>
+			<field name="OrderInputAction">EiaOrder</field>
+			<field name="ReloadInputAction">EiaReload</field>
+			<field name="TriggerPullWeight">0.10000000149</field>
+			<field name="RateOfFire">300.0</field>
+			<field name="ClientFireRateMultiplier">0</field>
+			<field name="ReloadDelay">0</field>
+			<field name="ReloadTime">3.0</field>
+			<field name="PostReloadSequenceTime">0</field>
+			<field name="ReloadThreshold">0</field>
+			<field name="PreFireDelay">0</field>
+			<field name="ZoomBeforeFireDelay">0</field>
+			<field name="WaitForTriggerRelease">true</field>
+			<field name="WaitForZoomRelease">false</field>
+			<field name="HoldReloadUntilFireRelease">false</field>
+			<field name="HoldReloadUntilZoomRelease">false</field>
+			<field name="ReloadLogic">rlReloadUnaffectedByWeaponSwitch</field>
+			<field name="ReloadType">rtMagazine</field>
+			<field name="FireLogicType">fltSingleFire</field>
+		</complex>
+		<complex name="Ammo">
+			<field name="MagazineCapacity">1</field>
+			<field name="NumberOfMagazines">-1</field>
+			<field name="TraceFrequency">0</field>
+			<field name="AmmoPickupMinAmount">0</field>
+			<field name="AmmoPickupMaxAmount">0</field>
+			<field name="AutoReplenishMagazine">false</field>
+			<field name="AutoReplenishDelay">5.0</field>
+			<field name="AmmoBoxPickupRate">1</field>
+			<field name="AmmoBoxPickupAmount">-1</field>
+		</complex>
+		<complex name="OverHeat">
+			<field name="HeatPerBullet">0</field>
+			<field name="HeatDropPerSecond">0.10000000149</field>
+			<field name="OverHeatPenaltyTime">0.5</field>
+			<field name="OverHeatThreshold">0.5</field>
+			<complex name="OverHeatEffect">
+				<field ref="fx/weapons/misc/overheat/fx_wpn_overheat_electronic/1b402907-976a-4e6e-8749-ff3fa4cf0c53" name="Effect" />
+				<complex name="Offset">0/0/0/*zero*</complex>
+				<complex name="Rotation">0/0/0/*zero*</complex>
+				<complex name="ZoomOffset">0/0/0/*zero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*zero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</complex>
+		<field name="UsePrimaryAmmo">false</field>
+		<field name="UnlimitedAmmoForAI">false</field>
+		<field name="LoopingFireSound">false</field>
+		<field name="SelfHealTimeWhenDeployed">0</field>
+		<field name="IsCounterMeasureWeapon">false</field>
+	</instance>
+	<instance guid="2004A829-B505-4392-B205-CA729A163A51" type="GameSharedResources.BulletEntityData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<complex name="Transform">1.0/0/0/*zero*/0/1.0/0/*zero*/0/0/1.0/*zero*/0/0/0/*zero*</complex>
+		<field name="Enabled">true</field>
+		<field ref="null" name="PhysicsData" />
+		<field name="Material">MeleeAttack</field>
+		<field name="IsObsolete">false</field>
+		<field ref="null" name="ReplacementObject" />
+		<field name="InitialSpeed">2000.0</field>
+		<field name="TimeToLive">1.0</field>
+		<field name="MaxCount">0</field>
+		<field name="InitMeshHideTime">0</field>
+		<field name="VisualConvergeDistance">30.0</field>
+		<field name="DetonateOnTimeout">false</field>
+		<field ref="null" name="Explosion" />
+		<field ref="null" name="Mesh" />
+		<field ref="null" name="TrailEffect" />
+		<field name="IsAttachable">false</field>
+		<field name="IsAttachableToSoldiers">false</field>
+		<field name="IsAttachableToVehicles">false</field>
+		<field name="ExtraDamping">false</field>
+		<complex name="InitialAngularVelocity">0/0/0/*zero*</complex>
+		<field ref="null" name="FlyBySound" />
+		<field name="Gravity">0</field>
+		<field name="ImpactImpulse">260.0</field>
+		<field name="DetonationTimeVariation">0</field>
+		<field name="VehicleDetonationRadius">0</field>
+		<field name="VehicleDetonationActivationDelay">0</field>
+		<field name="FlyBySoundRadius">5.0</field>
+		<field name="FlyBySoundSpeed">20.0</field>
+		<field name="Stamina">0</field>
+		<field name="DistributeDamageOverTime">0</field>
+		<field name="DamageToDistribute">0</field>
+		<field name="StartDamage">120.0</field>
+		<field name="EndDamage">120.0</field>
+		<field name="DamageFalloffStartDistance">0</field>
+		<field name="DamageFalloffEndDistance">0</field>
+		<field name="TimeToArmExplosion">0</field>
+		<field name="HasVehicleDetonation">false</field>
+		<field name="InstantHit">true</field>
+		<field ref="null" name="AlternateTrailEffect" />
+		<field name="StopTrailEffectOnUnspawn">true</field>
+		<field name="TrailEffectVelocityScale">1.0</field>
+		<field name="TrailEffectMinDistanceToSpawn">0</field>
+		<field ref="null" name="AdditionalTrailEffect" />
+		<field name="StopAdditionalTrailEffectOnUnspawn">false</field>
+		<field name="AdditionalTrailEffectVelocityScale">1.0</field>
+		<field name="AdditionalTrailEffectMinDistanceToSpawn">0</field>
+	</instance>
+</partition>

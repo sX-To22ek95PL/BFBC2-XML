@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<partition guid="A9E43391-D34C-419B-8A73-7EE2F59FF4F5" primaryInstance="4B199773-C475-4F87-8A2C-115BD606E5C5" exportMode="All">
+	<instance guid="4B199773-C475-4F87-8A2C-115BD606E5C5" type="GameSharedResources.AISettingsData" id="Settings">
+		<field name="Name">AI/Settings</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<field ref="46615d23-4ca0-43ec-b0bf-fda6d1e33d46" name="SensingConstants" />
+		<field ref="e12571b9-814e-47d7-a28e-8afb699b2e25" name="SoundEnvironmentConstants" />
+		<field ref="7a81669e-dda3-46d0-8acb-4ebef993fc82" name="CoverConstants" />
+		<field ref="8b2423a3-88b4-4f57-a780-22f3f7ffdb3c" name="NavigationConstants" />
+		<field ref="2d63fd03-7182-48bd-be17-b1b7d3559a0d" name="SoldierControlConstants" />
+		<field ref="2dd8dd14-213a-4e02-b031-93c221e9e2c9" name="CarControlConstants" />
+		<field ref="6b0fb3bb-9e5b-4dab-a6a5-8ff68d3f7720" name="TankControlConstants" />
+		<field ref="929dec9d-6506-487b-a00f-cea6e21ee92d" name="HelicopterControlConstants" />
+		<field ref="9c6904e3-0b2d-4705-898d-dcc01cb4c9dd" name="TurretControlConstants" />
+		<field ref="ad1c8161-d8a4-4335-a11f-c77c70c8a242" name="TargetEvaluationConstants" />
+		<field ref="8aaa9ef1-eb54-4b27-87aa-1fdeeb5fa85f" name="VOConstants" />
+		<field ref="90ace781-8763-4250-9ec9-52be9076d4b4" name="CombatConstants" />
+		<field ref="e943e6db-d1e0-42e7-8fd4-9e3892303a5f" name="SearchAndDestroyConstants" />
+		<field ref="8f84253e-7851-4309-9068-4e3ec69b5089" name="EnvironmentConstants" />
+		<field ref="c5733f12-18ed-4ad2-8aba-9af5ca27c27d" name="FollowConstants" />
+		<field ref="53ebc48f-80ef-471b-be48-f51032503dea" name="PositionEvaluationConstants" />
+		<field ref="4296bdcd-4b92-4573-a169-417d28cede53" name="TimingConstants" />
+		<field ref="58b30608-5a9b-445b-99a7-300fd8dff1a6" name="LookConstants" />
+		<field ref="962d4475-9e4f-4989-b8ec-ac32edb901a7" name="DebugConstants" />
+		<field ref="87ccecab-cd3f-45bb-885b-05bd527e2a50" name="KynapseConstants" />
+		<field ref="78fb3bf8-083f-42a1-82d4-46ac88ffbecd" name="TraversalConstants" />
+		<complex name="ReadinessLevels">
+			<complex name="Patrol">
+				<field name="MinReactionTime">0</field>
+				<field name="MaxReactionTime">3.0</field>
+				<field name="ReductionTime">0</field>
+			</complex>
+			<complex name="Ready">
+				<field name="MinReactionTime">0.10000000149</field>
+				<field name="MaxReactionTime">0.20000000298</field>
+				<field name="ReductionTime">30.0</field>
+			</complex>
+			<complex name="Combat">
+				<field name="MinReactionTime">0.600000023842</field>
+				<field name="MaxReactionTime">0.800000011921</field>
+				<field name="ReductionTime">30.0</field>
+			</complex>
+		</complex>
+		<field ref="objects/soldiers/templates/ai/defaultsoldiersensing/d4d505e6-eb66-408d-99ce-ad3920b8c94d" name="DefaultSensingTemplate" />
+		<field ref="objects/soldiers/templates/ai/defaultsoldierbehaviour/3c8cc6e9-2c7a-46e5-a089-8ca57577a640" name="DefaultBehaviourTemplate" />
+		<field ref="ai/behaviours/b9d51250-b80c-4134-bfc9-5649384a4ce0" name="DefaultVehicleType" />
+	</instance>
+	<instance guid="46615D23-4CA0-43EC-B0BF-FDA6D1E33D46" type="GameSharedResources.SensingConstantData">
+		<field name="SensingTimeSpan">1.0</field>
+		<field name="FireKeepTime">2.0</field>
+		<field name="AttackerTrackTime">10.0</field>
+		<field name="LineOfSightTestTime">1.0</field>
+		<field name="ExplosionInterestRange">64.0</field>
+		<field name="MaxRays">3</field>
+		<field name="VisionBoundingBoxSize">0.649999976158</field>
+		<field name="VisionHumanBoxOffset">0.40000000596</field>
+		<field name="CloseDistance">2.0</field>
+		<field name="CloseFireImpactDistance">5.0</field>
+		<field name="CloseExplosiveImpactDistance">8.0</field>
+		<field name="CloseShellDistance">5.0</field>
+		<field name="ImpactSenseDistance">12.0</field>
+		<field name="MaxVolume">150.0</field>
+		<field name="MaxSize">3.0</field>
+		<field name="MaxSpeed">12.0</field>
+		<field name="BackgroundLoudnessFactor">0.25</field>
+		<field name="MotionSizeFactor">0.10000000149</field>
+		<field name="MotionSpeedFactor">1.0</field>
+		<field name="MotionPeripheralityFactor">0.5</field>
+		<field name="MotionDistanceFactor">1.0</field>
+		<field name="SmokeSphereRadius">10.0</field>
+		<field name="SmokeSphereDuration">12.0</field>
+		<field name="SpawnOutOfLOSRaycastHeight">1.5</field>
+		<field name="SpawnOutOfLOSTraceDistance">10.0</field>
+		<field name="SpawnOutOfLOSRaycastDistance">2.0</field>
+		<field name="SpawnOutOfLOSRadius">20.0</field>
+	</instance>
+	<instance guid="E12571B9-814E-47D7-A28E-8AFB699B2E25" type="GameSharedResources.SoundEnvironmentConstantData">
+		<field name="HumanPlayerSoldierMovementVolumeOverride">45.0</field>
+		<field name="MemoryTime">0.5</field>
+		<field name="MinimumLoudness">30.0</field>
+	</instance>
+	<instance guid="7A81669E-DDA3-46D0-8ACB-4EBEF993FC82" type="GameSharedResources.CoverConstantData">
+		<field name="SlotSize">0.75</field>
+		<field name="SlotSpacing">1.5</field>
+		<field name="SlotEdgeDistance">0.5</field>
+		<field name="MinimumOpenCoverWidth">0.5</field>
+		<field name="RaysPerSlot">8.0</field>
+		<field name="RaysPerDetailSearch">0</field>
+		<field name="UseRaycastCache">true</field>
+		<field name="SearchRadius">25.0</field>
+		<field name="BaseHeight">0.850000023842</field>
+		<field name="StandHeight">1.70000004768</field>
+		<field name="MaxCoverLength">5.0</field>
+		<field name="SearchDirections">32</field>
+		<field name="SearchDirectionsPerTimeSlice">4</field>
+		<field name="ForcedDirections">8</field>
+		<field name="SearchRange">10.0</field>
+		<field name="HitSearchRange">3.0</field>
+		<field name="DistanceStep">5.0</field>
+		<field name="MaxNodesForProgression">1</field>
+		<field name="MovedResetDistance">5.0</field>
+		<field name="MaxCoversInMemory">500</field>
+		<field name="ForceRegenerateDestroyedCovers">true</field>
+		<field name="CrouchCoverModifier">1.0</field>
+		<field name="StandCoverModifier">0.75</field>
+		<field name="IntermediateCoverSlotModifier">0.75</field>
+		<field name="PositionEvaluationWeight">0.5</field>
+		<field name="DistanceEvaluationWeight">1.0</field>
+		<field name="FitnessEvaluationWeight">1.0</field>
+		<field name="EnemiesEvaluationWeight">0.5</field>
+		<field name="SwitchCoverUrgencyThreshold">0.20000000298</field>
+		<field name="FrontlineDistanceCap">10</field>
+		<field name="FrontlineEvaluationWeight">0</field>
+		<field name="ReevaluationTime">1.0</field>
+		<field name="CoverSelectionMethod">CSMAgainstThreatPosition</field>
+		<field name="ThreatRadius">20.0</field>
+		<field name="InCoverDistance">0.300000011921</field>
+		<field name="InCoverDeviation">25.0</field>
+		<field name="BaseTimeHealthModifier">10.0</field>
+		<field name="BaseTimeUrgencyModifier">10.0</field>
+		<field name="MinAttackableEnemyDistance">12.0</field>
+		<field name="MinDistanceToMoveStanding">8.0</field>
+		<field name="FinishDueToSeeingDelay">0.300000011921</field>
+		<field name="CoverFailIgnoreTime">10.0</field>
+		<array name="PathfindingTypesUsingCovers">
+			<item ref="ai/pathfinding/infantry/3096da77-3146-479c-ae35-c822273a54a7" />
+		</array>
+		<field name="HideCooldownMin">3.0</field>
+		<field name="HideCooldownMax">5.0</field>
+	</instance>
+	<instance guid="8B2423A3-88B4-4F57-A780-22F3F7FFDB3C" type="GameSharedResources.NavigationConstantData">
+		<field name="IgnoreKynapseSpeed">true</field>
+		<field name="SpeedThresholdForBeingStuck">0.15000000596</field>
+		<field name="TimeStuckBeforeTeleport">3.0</field>
+		<field name="TeleportForbidSector">55.0</field>
+		<field name="WaterCostModifier">5.0</field>
+		<field name="RoadCostModifier">0.5</field>
+		<field name="RandomDestinationHeightCheck">0.5</field>
+		<field name="UseTimeslicedSearch">true</field>
+		<field name="LpfStreamingMethod">LsmGrid</field>
+		<field name="LpfSectorSize">25.0</field>
+		<field name="LocalPathfindingLoadRadius">15.0</field>
+		<field name="MaxDynamicObjects">25</field>
+		<field name="MaxNodesToTrace">12</field>
+		<field name="RejectBadGoals">true</field>
+		<field name="FindNearestInsideAIMeshMethod">FnmFrostbite</field>
+		<field name="FindNearestDistMax">5.0</field>
+		<field name="UseTraceLineFallback">true</field>
+		<field name="FindNearestSearchRadius">50.0</field>
+		<field name="FindNearestSearchMaxNodes">12</field>
+		<field name="ForbiddenPathObjectStreamingDistance">75.0</field>
+		<field name="MaxPathObjects">30</field>
+		<field name="GraphStreamCollectBoxSamplingStep">0.15000000596</field>
+		<field name="GraphStreamCollectBoxSizeFactor">0.00999999977648</field>
+		<field name="GraphStreamCacheTime">10.0</field>
+		<field name="FailureRetryWaitTime">1.0</field>
+		<field name="MaxAnimationDirectionDifference">45.0</field>
+		<field name="MinSpeedForMovingAnimationStart">3.0</field>
+		<field name="MovementAnimationPrecisionRatio">1.20000004768</field>
+		<field name="AllowPreSpecialMovementDistance">3.0</field>
+		<field name="HelicopterWaypointInterpolationDistance">75.0</field>
+		<field name="HelicopterPathfindingSearchSteps">2</field>
+		<field name="MinimumHelicopterHeight">20.0</field>
+		<field name="HelicopterPathRadius">9.0</field>
+		<field name="HelicopterRecalculateRadius">15.0</field>
+		<field name="ValidAerialPositionHeight">5.0</field>
+		<field name="AerialRandomDestinationHeight">5.0</field>
+		<field name="MoveToValidWPRadius">0.5</field>
+		<field name="AvoidVehicleDistance">10.0</field>
+		<field name="AvoidVehicleSize">5.0</field>
+		<field name="AvoidVehicleMoveRadius">0.5</field>
+		<field name="AvoidVehicleMoveDistance">1.0</field>
+	</instance>
+	<instance guid="AD1C8161-D8A4-4335-A11F-C77C70C8A242" type="GameSharedResources.TargetEvaluationConstantData">
+		<field name="KeepTargetTime">0.5</field>
+		<field name="MaxBattleStrength">10.0</field>
+		<field name="UpdateInterval">0.5</field>
+		<field name="DefaultHumanTargetPreference">1.20000004768</field>
+		<field name="OtherSquadAttackerFactorUsage">0</field>
+		<field name="TargetFlipFactorUsage">0</field>
+	</instance>
+	<instance guid="2D63FD03-7182-48BD-BE17-B1B7D3559A0D" type="GameSharedResources.SoldierControlConstantData">
+		<field name="MaximumHeadTurnAngle">80.0</field>
+		<field name="SearchHeadTurningSpeed">10.0</field>
+		<field name="SlowHeadTurningSpeed">10.0</field>
+		<field name="NormalHeadTurningSpeed">20.0</field>
+		<field name="FastHeadTurningSpeed">60.0</field>
+		<field name="RelaxedTurningSpeed">90.0</field>
+		<field name="NormalTurningSpeed">150.0</field>
+		<field name="CrouchTurningSpeed">90.0</field>
+		<field name="TurnAngularAcceleration">720.0</field>
+		<field name="AimMinPrecisionTolerance">0.10000000149</field>
+		<field name="PitchSpeed">60.0</field>
+		<field name="AimControlMode">AcmDependsOnReadinessAndAimState</field>
+		<field name="Acceleration">5.0</field>
+		<field name="Deceleration">3.0</field>
+		<field name="MoveAngularAcceleration">720.0</field>
+		<field name="MoveAngularSpeedFactor">2.70000004768</field>
+		<field name="SneakingSpeed">1.5</field>
+		<field name="RelaxedNormalSpeed">1.5</field>
+		<field name="AlertedNormalSpeed">2.20000004768</field>
+		<field name="FastSpeed">4.0</field>
+		<field name="SprintSpeed">6.0</field>
+		<field name="CrouchSpeed">2.5</field>
+		<field name="CatchupSpeed">10.0</field>
+		<field name="AimForwardSpeed">4.0</field>
+		<field name="AimStrafeSpeed">2.20000004768</field>
+		<field name="MaxForwardDir">60.0</field>
+		<field name="MaxStrafeDir">135.0</field>
+		<field name="StandingStillCutoffSpeed">1.25</field>
+	</instance>
+	<instance guid="2DD8DD14-213A-4E02-B031-93C221E9E2C9" type="GameSharedResources.CarControlConstantData">
+		<field name="YawStrength">15.0</field>
+	</instance>
+	<instance guid="6B0FB3BB-9E5B-4DAB-A6A5-8FF68D3F7720" type="GameSharedResources.TankControlConstantData">
+		<field name="YawStrength">10.0</field>
+		<field name="SmoothTurnSpeedAngle">0</field>
+		<field name="SmoothTurnSpeedLimit">60.0</field>
+		<field name="TurnSpeedLimit">60.0</field>
+	</instance>
+	<instance guid="78FB3BF8-083F-42A1-82D4-46AC88FFBECD" type="GameSharedResources.TraversalConstantData">
+		<field ref="56448a54-cd5e-4c84-9baa-955187f078df" name="BehaviourTestTraversalConstants" />
+		<field ref="354a7914-3b4a-420c-8acd-5680a5c5d27d" name="CoverSearchTraversalConstants" />
+		<field ref="301f3578-5d66-4edc-b41b-653b27946a96" name="EnvironmentTraversalConstants" />
+		<field ref="6f4524d1-6f43-4c6d-baba-b4d0e1adf2d1" name="FrontLineTraversalConstants" />
+	</instance>
+	<instance guid="56448A54-CD5E-4C84-9BAA-955187F078DF" type="GameSharedResources.TraversalConfigData">
+		<field name="Name">BehaviourTest</field>
+		<field name="TimePart">1</field>
+		<field name="MaxDistance">25.0</field>
+	</instance>
+	<instance guid="354A7914-3B4A-420C-8ACD-5680A5C5D27D" type="GameSharedResources.TraversalConfigData">
+		<field name="Name">CoverSearch</field>
+		<field name="TimePart">1</field>
+		<field name="MaxDistance">30.0</field>
+	</instance>
+	<instance guid="301F3578-5D66-4EDC-B41B-653B27946A96" type="GameSharedResources.TraversalConfigData">
+		<field name="Name">Environment</field>
+		<field name="TimePart">0</field>
+		<field name="MaxDistance">50.0</field>
+	</instance>
+	<instance guid="6F4524D1-6F43-4C6D-BABA-B4D0E1ADF2D1" type="GameSharedResources.TraversalConfigData">
+		<field name="Name">FrontLine</field>
+		<field name="TimePart">1</field>
+		<field name="MaxDistance">60.0</field>
+	</instance>
+	<instance guid="87CCECAB-CD3F-45BB-885B-05BD527E2A50" type="GameSharedResources.KynapseConstantData">
+		<field name="KynapseLicenseServerName">elrond</field>
+		<field name="MaxMobileVehicles">16</field>
+	</instance>
+	<instance guid="8AAA9EF1-EB54-4B27-87AA-1FDEEB5FA85F" type="GameSharedResources.VOConstantData">
+		<field name="EnemyBehindPlayerRadius">20.0</field>
+		<field name="EnemyBehindPlayerArc">60.0</field>
+		<field name="MaxEnemyBehindPlayerHeightDiff">2.0</field>
+		<field name="MaxPlayerHurtDistance">40.0</field>
+		<field name="PlayerHurtThreshold">0.300000011921</field>
+		<field name="TimeBetweenLookAtPlayersMin">5.0</field>
+		<field name="TimeBetweenLookAtPlayersMax">7.0</field>
+		<field name="TimeBeforeFirstLookAtPlayerMin">1.5</field>
+		<field name="TimeBeforeFirstLookAtPlayerMax">3.0</field>
+		<field name="MinTimeAfterInterludeBeforeLookAtPlayer">10.0</field>
+		<field name="LoiterActivityDistance">10.0</field>
+		<field name="LoiterHumanActivityTime">25.0</field>
+		<field name="LoiterMemberActivityTime">25.0</field>
+		<field name="LoiterPauseTime">25.0</field>
+		<field name="LoiterDistanceSquadToFriendlies">10.0</field>
+		<field name="LoiterAllowedEnemyDistance">30.0</field>
+	</instance>
+	<instance guid="962D4475-9E4F-4989-B8EC-AC32EDB901A7" type="GameSharedResources.DebugConstantData">
+		<field name="BotDebugDistance">9999.0</field>
+		<field name="PathdataViewDistance">25.0</field>
+		<field name="InViewModeFOV">5.0</field>
+		<field name="InaccuracyEnabled">true</field>
+		<field name="MinDecisionTime">0</field>
+		<field name="GraphDataBuffer">128</field>
+		<field name="HoldGroundErrorDelayTime">1.0</field>
+	</instance>
+	<instance guid="90ACE781-8763-4250-9EC9-52BE9076D4B4" type="GameSharedResources.CombatConstantData">
+		<field name="PoseTransitionFireDelay">0.25</field>
+		<field name="ChangePoseStopDelay">0.34999999404</field>
+		<field name="AllowCrouchFiringWaterLevel">0.40000000596</field>
+		<field name="PoseChangeLockoutTime">2.0</field>
+		<field name="ExplosiveObjectSearchRadius">8.0</field>
+		<field name="ExplosiveKnockdownDistance">2.5</field>
+		<field name="ExplosiveBlastMultiplier">0.660000026226</field>
+		<field name="MeleeTargetAngle">360.0</field>
+		<field name="MoveOutOfCoverLineOfSightTest">true</field>
+		<field name="MoveOutOfCoverTargetAngle">15.0</field>
+		<field name="MaxSuppressPositionTime">1.0</field>
+		<field name="MaxSuppressDistance">200.0</field>
+		<field name="MaxSuppressorsRatio">1.0</field>
+		<field name="SuppressMinLOFDistance">8.0</field>
+		<field name="SuppressMinLOFOffsetDistance">35.0</field>
+		<field name="InvestigateObeyFrontLineDistance">12.0</field>
+		<field name="InvestigateCoverSearchWidth">3.0</field>
+		<field name="InvestigateAroundTargetRadius">12.0</field>
+		<field name="InvestigateFreeLookRadius">12.0</field>
+		<field name="InvestigatePauseTimeMin">0.75</field>
+		<field name="InvestigatePauseTimeMax">1.5</field>
+		<field name="MoveInCombatDelay">0</field>
+		<field name="NewEnemyDecideMaxDistance">12.0</field>
+		<field name="AvoidC4Time">10.0</field>
+		<field name="StandStillMinTime">0.5</field>
+		<field name="StationaryBailDistance">55.0</field>
+		<field name="PrecisionTimeout">2.0</field>
+		<field name="CloseRangeAccuracyDistance">12.0</field>
+	</instance>
+	<instance guid="8F84253E-7851-4309-9068-4E3EC69B5089" type="GameSharedResources.EnvironmentConstantData">
+		<field name="BangerIncludeDistance">10.0</field>
+	</instance>
+	<instance guid="929DEC9D-6506-487B-A00F-CEA6E21EE92D" type="GameSharedResources.HelicopterControlConstantData">
+		<field name="HeightToSpeedScale">1.0</field>
+		<field name="MinSpeedForHeightSpeedRestriction">0.5</field>
+		<field name="HeightSpeedDamper">1.0</field>
+		<field name="HeightSpeedToThrottleScale">1.0</field>
+		<field name="HeightSpeedToBrakeScale">0.10000000149</field>
+		<field name="HeightTiltInfluence">1.0</field>
+		<field name="MaxThrottle">1.0</field>
+		<field name="MaxBrake">1.0</field>
+		<field name="AlwaysAttainHeightDistance">20.0</field>
+		<field name="MovementToVelocityScale">0.5</field>
+		<field name="ForwardsSpeedDamper">0.10000000149</field>
+		<field name="SidewaysSpeedDamper">0.10000000149</field>
+		<field name="ForwardsSpeedToPitchScale">0.0500000007451</field>
+		<field name="SidewaysSpeedToRollScale">0.0500000007451</field>
+		<field name="MaxMovementPitch">0.300000011921</field>
+		<field name="MaxAimPitch">0.300000011921</field>
+		<field name="PitchToAngularSpeedScale">3.0</field>
+		<field name="PitchAngularSpeedDamper">1.0</field>
+		<field name="PitchAngularSpeedToPitchInputScale">1.0</field>
+		<field name="MaxPitchInput">1.0</field>
+		<field name="PitchAimOverride">0.10000000149</field>
+		<field name="MaxRoll">0.5</field>
+		<field name="RollToAngularSpeedScale">3.0</field>
+		<field name="RollAngularSpeedDamper">1.0</field>
+		<field name="RollAngularSpeedToRollInputScale">1.0</field>
+		<field name="MaxRollInput">1.0</field>
+		<field name="YawDifferenceToAngularSpeedScale">3.5</field>
+		<field name="YawAngularSpeedDamper">1.0</field>
+		<field name="YawAngularSpeedToYawInputScale">1.0</field>
+		<field name="MaxYawInput">1.0</field>
+		<field name="AttackDistance">150.0</field>
+		<field name="AttackSideSearchDistance">200.0</field>
+		<field name="MaxAttackHeightDiff">100.0</field>
+		<field name="MinAttackDistance">25.0</field>
+		<field name="PostAttackClearDistance">20.0</field>
+		<field name="AttackHeight">55.0</field>
+		<field name="CombatMovementRadius">25.0</field>
+		<field name="TargetProximity">100.0</field>
+		<field name="TargetTooClose">50.0</field>
+		<field name="AttackHoverTime">2.5</field>
+		<field name="AttackPilotHeight">35.0</field>
+		<field name="PilotHeightSpan">20.0</field>
+		<field name="AttackPilotMaxSpeed">20.0</field>
+		<field name="PilotMoveStep">50.0</field>
+		<field name="TurnGunnerCheckAngle">30.0</field>
+		<field name="EvasiveMiniumSpeed">1.0</field>
+		<field name="EvasiveEstimatedImpactTime">3.0</field>
+		<field name="EvasiveDeflectionAngle">15.0</field>
+		<field name="EvasiveAltitude">50.0</field>
+		<field name="EvasiveWaypointRadius">20.0</field>
+	</instance>
+	<instance guid="C5733F12-18ED-4AD2-8ABA-9AF5CA27C27D" type="GameSharedResources.FollowConstantData">
+		<field name="DistanceFromPlayerBeforeTeleport">40.0</field>
+		<field name="FollowHumanMaxDistance">8.0</field>
+		<field name="FollowHumanInCombatMaxDistance">20.0</field>
+		<field name="FollowAiMaxDistance">5.0</field>
+		<field name="FollowAiInCombatMaxDistance">100.0</field>
+		<field name="FollowMimicPoseDistance">100.0</field>
+		<field name="FollowInertia">0.899999976158</field>
+		<field name="SlowStartDistance">0</field>
+		<field name="SlowStartMinTime">0</field>
+		<field name="SlowStopDistance">0</field>
+		<field name="LookAwayAngle">90.0</field>
+	</instance>
+	<instance guid="53EBC48F-80EF-471B-BE48-F51032503DEA" type="GameSharedResources.PositionEvaluationConstantData">
+		<field name="MaxCachedNodeIds">64</field>
+		<field name="FrontLineSearchSensitivity">5</field>
+		<field name="FrontLineSearchDepth">3</field>
+		<field name="FrontLineAccuracy">1</field>
+		<field name="RandomPositionCount">15</field>
+		<field name="OwnRandomPositionsRadius">15.0</field>
+	</instance>
+	<instance guid="4296BDCD-4B92-4573-A169-417D28CEDE53" type="GameSharedResources.TimingConstantData">
+		<field name="UpdateTimePerFrame">7.0</field>
+		<complex name="SubsystemTimeParts">
+			<field name="Pathfinding">0.20000000298</field>
+			<field name="Traversals">0.20000000298</field>
+			<field name="AreaDistribution">0.019999999553</field>
+			<field name="DynamicObjectEnvironment">0.00999999977648</field>
+			<field name="Sensing">0.10000000149</field>
+			<field name="Evaluation">0.0500000007451</field>
+			<field name="GoalUpdates">0.00999999977648</field>
+			<field name="BehaviourSelection">0.10000000149</field>
+			<field name="BehaviourExecution">0.0500000007451</field>
+			<field name="SquadUpdate">0.20000000298</field>
+		</complex>
+		<array name="PriorityClasses">
+			<item ref="0813ab80-7e87-48d6-bf9c-720fbd374710" />
+		</array>
+	</instance>
+	<instance guid="0813AB80-7E87-48D6-BF9C-720FBD374710" type="GameSharedResources.BotPriorityConfigData">
+		<field name="AngleOffset">180.0</field>
+		<field name="Distance">0</field>
+		<field name="Period">1</field>
+		<field name="AppliesToSensing">true</field>
+		<field name="AppliesToDecisions">true</field>
+		<field name="AppliesToExecution">true</field>
+		<complex name="DebugColor">1.0/0/0/*nonzero*</complex>
+	</instance>
+	<instance guid="58B30608-5A9B-445B-99A7-300FD8DFF1A6" type="GameSharedResources.LookConstantData">
+		<field name="EyeTargeterMinOffsetTime2">3.0</field>
+		<field name="EyeTargeterMaxOffsetTime2">5.0</field>
+		<field name="EyeTargeterMinPitchOffset">-0.20000000298</field>
+		<field name="EyeTargeterMaxPitchOffset">0.20000000298</field>
+		<field name="EyeTargeterMinYawOffset">-0.600000023842</field>
+		<field name="EyeTargeterMaxYawOffset">0.600000023842</field>
+		<field name="EyeTargeterSpringModifier">0.800000011921</field>
+		<field name="LookAroundClampAngle">80.0</field>
+		<field name="LookAroundMinRandomWaitTime">5.0</field>
+		<field name="LookAroundMaxRandomWaitTime">7.0</field>
+		<field name="LookAroundRandomAfterObjectModifier">1.5</field>
+	</instance>
+	<instance guid="9C6904E3-0B2D-4705-898D-DCC01CB4C9DD" type="GameSharedResources.TurretControlConstantData">
+		<field name="SearchLookSpeed">5.0</field>
+		<field name="SlowLookSpeed">10.0</field>
+		<field name="NormalLookSpeed">15.0</field>
+		<field name="FastLookSpeed">20.0</field>
+	</instance>
+	<instance guid="E943E6DB-D1E0-42E7-8FD4-9E3892303A5F" type="GameSharedResources.SearchAndDestroyConstantData">
+		<field name="TimeToWaitMin">3.0</field>
+		<field name="TimeToWaitMax">6.0</field>
+		<field name="KnownTargetRadius">12.0</field>
+		<field name="DefaultSearchAndDestroyRadius">15.0</field>
+	</instance>
+</partition>

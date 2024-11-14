@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<partition guid="A499D74D-AD54-49EE-A102-6F9403910B0C" primaryInstance="A65B2CBB-05F1-488B-8DD1-9895F2B60AC5" exportMode="All">
+	<instance guid="A65B2CBB-05F1-488B-8DD1-9895F2B60AC5" type="GameSharedResources.WeaponFiringData" id="BU_sni_M95_Firing">
+		<field ref="aca0193a-bc85-4a6e-9809-a2e9fdd57b10" name="PrimaryFire" />
+		<field name="DeployTime">0.649999976158</field>
+		<field name="ReactivateCooldownTime">0</field>
+		<field name="UseAutoAiming">false</field>
+		<field name="AutoSpotOnFire">false</field>
+		<field name="AutoSpotOnZoom">true</field>
+		<field name="SpottingDistance">350.0</field>
+		<field ref="0c03ef26-a340-4751-8eda-7431c5c7039b" name="WeaponSway" />
+		<field name="InflictSelfDamage">false</field>
+		<field name="FireOnDeploy">false</field>
+		<field name="AbortReloadOnSprint">false</field>
+		<array name="VOTypes">
+			<item ref="sound/vo/types/29201a68-0a7b-4e28-9676-ac6682d70ea7" />
+		</array>
+		<complex name="Rumble">
+			<field name="LowRumble">1.0</field>
+			<field name="HighRumble">0</field>
+			<field name="RumbleDuration">0.40000000596</field>
+		</complex>
+		<field name="AiDamageModifier">1.0</field>
+	</instance>
+	<instance guid="ACA0193A-BC85-4A6E-9809-A2E9FDD57B10" type="GameSharedResources.FiringFunctionData">
+		<array name="Dispersion">
+			<complex>
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">0</field>
+				<field name="IncreasePerShot">0</field>
+				<field name="DecreasePerSecond">0</field>
+			</complex>
+			<complex>
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">0</field>
+				<field name="IncreasePerShot">0</field>
+				<field name="DecreasePerSecond">0</field>
+			</complex>
+		</array>
+		<complex name="WeaponDispersion">
+			<field name="JumpDispersionAngle">0</field>
+			<field name="ProneTransitionDispersionAngle">0</field>
+			<field name="MoveDispersionAngle">0</field>
+			<field name="MoveZoomedDispersionAngle">0</field>
+			<field name="DecreasePerSecond">0</field>
+		</complex>
+		<array name="FireEffects1p">
+			<complex>
+				<field ref="fx/weapons/muzzleflashes/specific/fx_muzz_bu_sni/c48f3aea-d02d-499e-a6cf-74a4930866da" name="Effect" />
+				<complex name="Offset">0/0.0500000007451/1.20000004768/*nonzero*</complex>
+				<complex name="Rotation">0/0/0/*nonzero*</complex>
+				<complex name="ZoomOffset">0/-0.10000000149/1.20000004768/*nonzero*</complex>
+				<field name="UseZoomOffset">true</field>
+				<complex name="ZoomRotation">0/0/0/*nonzero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</array>
+		<array name="FireEffects3p">
+			<complex>
+				<field ref="fx/weapons/muzzleflashes/specific/fx_muzz_bu_sni_3p/c1c2912c-5175-4dfd-aa19-1e3d65bc86d4" name="Effect" />
+				<complex name="Offset">0/0.0500000007451/1.20000004768/*nonzero*</complex>
+				<complex name="Rotation">0/0/0/*nonzero*</complex>
+				<complex name="ZoomOffset">0/0/0/*nonzero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*nonzero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</array>
+		<field ref="effects/weapons/soundeffects/bu_sni_m95_fire_sound/e9103fc5-1640-464c-98c5-dbcab7e082ec" name="FireSoundEffect" />
+		<field ref="null" name="ProjectileFireSound" />
+		<field ref="sound/weapons/deploy/generic_trigger_click/e5ba540f-ae7c-4f6c-b2cc-b3a87beec274" name="OutOfAmmoSoundEffect" />
+		<field ref="null" name="ReflectionSound" />
+		<complex name="Shot">
+			<complex name="InitialPosition">0/0/0/*zero*</complex>
+			<complex name="InitialDirection">0/0/1.0/*zero*</complex>
+			<complex name="InitialSpeed">0/0/600.0/*zero*</complex>
+			<field name="InheritWeaponSpeedAmount">0</field>
+			<field ref="null" name="MuzzleExplosion" />
+			<field ref="41e786ec-4a9f-4bbd-9abf-f924696ddd02" name="ProjectileData" />
+			<field name="SpawnDelay">0</field>
+			<field name="NumberOfBulletsPerShell">1</field>
+			<field name="NumberOfBulletsPerShot">1</field>
+			<field name="RelativeTargetAiming">false</field>
+			<field name="ForceSpawnToCamera">false</field>
+			<field name="ActiveForceSpawnToCamera">true</field>
+		</complex>
+		<complex name="FireLogic">
+			<complex name="HoldAndRelease">
+				<field name="MaxHoldTime">10.0</field>
+				<field name="MinPowerModifier">0</field>
+				<field name="MaxPowerModifier">1.0</field>
+				<field name="PowerIncreasePerSecond">0.5</field>
+				<field name="Delay">0</field>
+				<field name="ForceFireWhenKilledHolding">true</field>
+				<field name="KilledHoldingPowerModifier">0</field>
+			</complex>
+			<complex name="BoltAction">
+				<field name="BoltActionDelay">0</field>
+				<field name="BoltActionTime">2.29999995232</field>
+				<field name="HoldBoltActionUntilFireRelease">true</field>
+				<field name="HoldBoltActionUntilZoomRelease">false</field>
+			</complex>
+			<complex name="Recoil">
+				<field name="MaxRecoilAngleX">0</field>
+				<field name="MinRecoilAngleX">0</field>
+				<field name="MaxRecoilAngleY">0</field>
+				<field name="MinRecoilAngleY">0</field>
+				<field name="MaxRecoilAngleZ">0</field>
+				<field name="MinRecoilAngleZ">0</field>
+				<field name="MaxRecoilFov">0.5</field>
+				<field name="MinRecoilFov">0.5</field>
+				<field name="RecoilFollowsDispersion">false</field>
+			</complex>
+			<field name="FireInputAction">EiaFire</field>
+			<field name="OrderInputAction">EiaOrder</field>
+			<field name="ReloadInputAction">EiaReload</field>
+			<field name="TriggerPullWeight">0.899999976158</field>
+			<field name="RateOfFire">450.0</field>
+			<field name="ClientFireRateMultiplier">0.670000016689</field>
+			<field name="ReloadDelay">0</field>
+			<field name="ReloadTime">6.90000009537</field>
+			<field name="PostReloadSequenceTime">0</field>
+			<field name="ReloadThreshold">0.670000016689</field>
+			<field name="PreFireDelay">0</field>
+			<field name="ZoomBeforeFireDelay">0</field>
+			<field name="WaitForTriggerRelease">true</field>
+			<field name="WaitForZoomRelease">true</field>
+			<field name="HoldReloadUntilFireRelease">true</field>
+			<field name="HoldReloadUntilZoomRelease">false</field>
+			<field name="ReloadLogic">rlWeaponSwitchCancelsUnfinishedReload</field>
+			<field name="ReloadType">rtMagazine</field>
+			<field name="FireLogicType">fltSingleFireWithBoltAction</field>
+		</complex>
+		<complex name="Ammo">
+			<field name="MagazineCapacity">5</field>
+			<field name="NumberOfMagazines">5</field>
+			<field name="TraceFrequency">1</field>
+			<field name="AmmoPickupMinAmount">3</field>
+			<field name="AmmoPickupMaxAmount">8</field>
+			<field name="AutoReplenishMagazine">false</field>
+			<field name="AutoReplenishDelay">5.0</field>
+			<field name="AmmoBoxPickupRate">1</field>
+			<field name="AmmoBoxPickupAmount">-1</field>
+		</complex>
+		<complex name="OverHeat">
+			<field name="HeatPerBullet">0</field>
+			<field name="HeatDropPerSecond">0</field>
+			<field name="OverHeatPenaltyTime">0</field>
+			<field name="OverHeatThreshold">0.800000011921</field>
+			<complex name="OverHeatEffect">
+				<field ref="null" name="Effect" />
+				<complex name="Offset">0/0/0/*zero*</complex>
+				<complex name="Rotation">0/0/0/*zero*</complex>
+				<complex name="ZoomOffset">0/0/0/*zero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*zero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</complex>
+		<field name="UsePrimaryAmmo">true</field>
+		<field name="UnlimitedAmmoForAI">false</field>
+		<field name="LoopingFireSound">false</field>
+		<field name="SelfHealTimeWhenDeployed">0</field>
+		<field name="IsCounterMeasureWeapon">false</field>
+	</instance>
+	<instance guid="41E786EC-4A9F-4BBD-9ABF-F924696DDD02" type="GameSharedResources.BulletEntityData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<complex name="Transform">1.0/0/0/*zero*/0/1.0/0/*zero*/0/0/1.0/*zero*/0/0/0/*zero*</complex>
+		<field name="Enabled">true</field>
+		<field ref="null" name="PhysicsData" />
+		<field name="Material">HMG_bullet</field>
+		<field name="IsObsolete">false</field>
+		<field ref="null" name="ReplacementObject" />
+		<field name="InitialSpeed">2000.0</field>
+		<field name="TimeToLive">2.0</field>
+		<field name="MaxCount">0</field>
+		<field name="InitMeshHideTime">0</field>
+		<field name="VisualConvergeDistance">30.0</field>
+		<field name="DetonateOnTimeout">false</field>
+		<field ref="null" name="Explosion" />
+		<field ref="null" name="Mesh" />
+		<field ref="fx/weapons/projecticles/tracers/fx_tracer_generic_s/639e0059-ac00-4a7c-982a-2d51e86baa21" name="TrailEffect" />
+		<field name="IsAttachable">false</field>
+		<field name="IsAttachableToSoldiers">false</field>
+		<field name="IsAttachableToVehicles">false</field>
+		<field name="ExtraDamping">false</field>
+		<complex name="InitialAngularVelocity">0/0/0/*zero*</complex>
+		<field ref="sound/maoism/bullet_flybys/bullet_flyby_for_sniper_rifle_50cal/60542572-ddb8-4f5e-a95a-3a5709aa7049" name="FlyBySound" />
+		<field name="Gravity">-9.81000041962</field>
+		<field name="ImpactImpulse">320.0</field>
+		<field name="DetonationTimeVariation">0</field>
+		<field name="VehicleDetonationRadius">0</field>
+		<field name="VehicleDetonationActivationDelay">0</field>
+		<field name="FlyBySoundRadius">50.0</field>
+		<field name="FlyBySoundSpeed">20.0</field>
+		<field name="Stamina">0</field>
+		<field name="DistributeDamageOverTime">0</field>
+		<field name="DamageToDistribute">0</field>
+		<field name="StartDamage">100.0</field>
+		<field name="EndDamage">55.0</field>
+		<field name="DamageFalloffStartDistance">18.0</field>
+		<field name="DamageFalloffEndDistance">36.0</field>
+		<field name="TimeToArmExplosion">0</field>
+		<field name="HasVehicleDetonation">false</field>
+		<field name="InstantHit">false</field>
+		<field ref="null" name="AlternateTrailEffect" />
+		<field name="StopTrailEffectOnUnspawn">true</field>
+		<field name="TrailEffectVelocityScale">1.0</field>
+		<field name="TrailEffectMinDistanceToSpawn">0</field>
+		<field ref="fx/weapons/projecticles/tracers/fx_tracer_sniper_smoketrail/ece55c3b-1b73-4525-8710-07843dc69b37" name="AdditionalTrailEffect" />
+		<field name="StopAdditionalTrailEffectOnUnspawn">false</field>
+		<field name="AdditionalTrailEffectVelocityScale">1.0</field>
+		<field name="AdditionalTrailEffectMinDistanceToSpawn">30.0</field>
+	</instance>
+	<instance guid="0C03EF26-A340-4751-8EDA-7431C5C7039B" type="GameSharedResources.GunSwayData">
+		<complex name="Stand">
+			<complex name="NoZoom">
+				<complex name="BaseValue">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Moving">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Jumping">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">1.79999995232</field>
+					<field name="DecreasePerSecond">3.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="VaultingSmallObject">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="VaultingMediumObject">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="Recoil">
+					<field name="RecoilAmplitudeMax">10.0</field>
+					<field name="RecoilAmplitudeIncPerShot">2.0</field>
+					<field name="RecoilAngleMax">360.0</field>
+					<field name="RecoilAngleIncPerShot">30.0</field>
+					<field name="RecoilAmplitudeDecreaseFactor">8.0</field>
+				</complex>
+				<complex name="GunSwayLag">
+					<field name="MoveStrafeModifier">0</field>
+					<field name="MoveForwardModifier">0</field>
+					<field name="RotateYawModifier">0</field>
+					<field name="RotatePitchModifier">0</field>
+					<field name="ReleaseModifier">0</field>
+				</complex>
+			</complex>
+			<complex name="Zoom">
+				<complex name="BaseValue">
+					<field name="MinAngle">0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Moving">
+					<field name="MinAngle">2.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Jumping">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">1.79999995232</field>
+					<field name="DecreasePerSecond">3.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="VaultingSmallObject">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="VaultingMediumObject">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="Recoil">
+					<field name="RecoilAmplitudeMax">10.0</field>
+					<field name="RecoilAmplitudeIncPerShot">0.25</field>
+					<field name="RecoilAngleMax">360.0</field>
+					<field name="RecoilAngleIncPerShot">30.0</field>
+					<field name="RecoilAmplitudeDecreaseFactor">50.0</field>
+				</complex>
+				<complex name="GunSwayLag">
+					<field name="MoveStrafeModifier">0</field>
+					<field name="MoveForwardModifier">0</field>
+					<field name="RotateYawModifier">0</field>
+					<field name="RotatePitchModifier">0</field>
+					<field name="ReleaseModifier">0</field>
+				</complex>
+			</complex>
+		</complex>
+		<complex name="Crouch">
+			<complex name="NoZoom">
+				<complex name="BaseValue">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Moving">
+					<field name="MinAngle">7.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Recoil">
+					<field name="RecoilAmplitudeMax">10.0</field>
+					<field name="RecoilAmplitudeIncPerShot">2.0</field>
+					<field name="RecoilAngleMax">360.0</field>
+					<field name="RecoilAngleIncPerShot">30.0</field>
+					<field name="RecoilAmplitudeDecreaseFactor">8.0</field>
+				</complex>
+				<complex name="GunSwayLag">
+					<field name="MoveStrafeModifier">0</field>
+					<field name="MoveForwardModifier">0</field>
+					<field name="RotateYawModifier">0</field>
+					<field name="RotatePitchModifier">0</field>
+					<field name="ReleaseModifier">0</field>
+				</complex>
+			</complex>
+			<complex name="Zoom">
+				<complex name="BaseValue">
+					<field name="MinAngle">0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Moving">
+					<field name="MinAngle">2.0</field>
+					<field name="MaxAngle">7.0</field>
+					<field name="IncreasePerShot">0</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">true</field>
+				</complex>
+				<complex name="Recoil">
+					<field name="RecoilAmplitudeMax">10.0</field>
+					<field name="RecoilAmplitudeIncPerShot">0.25</field>
+					<field name="RecoilAngleMax">360.0</field>
+					<field name="RecoilAngleIncPerShot">30.0</field>
+					<field name="RecoilAmplitudeDecreaseFactor">50.0</field>
+				</complex>
+				<complex name="GunSwayLag">
+					<field name="MoveStrafeModifier">0</field>
+					<field name="MoveForwardModifier">0</field>
+					<field name="RotateYawModifier">0</field>
+					<field name="RotatePitchModifier">0</field>
+					<field name="ReleaseModifier">0</field>
+				</complex>
+			</complex>
+		</complex>
+		<complex name="Prone">
+			<complex name="NoZoom">
+				<complex name="BaseValue">
+					<field name="MinAngle">0</field>
+					<field name="MaxAngle">5.5</field>
+					<field name="IncreasePerShot">1.79999995232</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="Moving">
+					<field name="MinAngle">0</field>
+					<field name="MaxAngle">5.5</field>
+					<field name="IncreasePerShot">1.79999995232</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="Recoil">
+					<field name="RecoilAmplitudeMax">10.0</field>
+					<field name="RecoilAmplitudeIncPerShot">2.0</field>
+					<field name="RecoilAngleMax">360.0</field>
+					<field name="RecoilAngleIncPerShot">30.0</field>
+					<field name="RecoilAmplitudeDecreaseFactor">4.0</field>
+				</complex>
+				<complex name="GunSwayLag">
+					<field name="MoveStrafeModifier">0</field>
+					<field name="MoveForwardModifier">0</field>
+					<field name="RotateYawModifier">0</field>
+					<field name="RotatePitchModifier">0</field>
+					<field name="ReleaseModifier">0</field>
+				</complex>
+			</complex>
+			<complex name="Zoom">
+				<complex name="BaseValue">
+					<field name="MinAngle">0</field>
+					<field name="MaxAngle">5.5</field>
+					<field name="IncreasePerShot">1.79999995232</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="Moving">
+					<field name="MinAngle">0</field>
+					<field name="MaxAngle">5.5</field>
+					<field name="IncreasePerShot">1.79999995232</field>
+					<field name="DecreasePerSecond">11.0</field>
+					<field name="UseAimSpecialisation">false</field>
+				</complex>
+				<complex name="Recoil">
+					<field name="RecoilAmplitudeMax">10.0</field>
+					<field name="RecoilAmplitudeIncPerShot">2.0</field>
+					<field name="RecoilAngleMax">360.0</field>
+					<field name="RecoilAngleIncPerShot">30.0</field>
+					<field name="RecoilAmplitudeDecreaseFactor">4.0</field>
+				</complex>
+				<complex name="GunSwayLag">
+					<field name="MoveStrafeModifier">0</field>
+					<field name="MoveForwardModifier">0</field>
+					<field name="RotateYawModifier">0</field>
+					<field name="RotatePitchModifier">0</field>
+					<field name="ReleaseModifier">0</field>
+				</complex>
+			</complex>
+		</complex>
+		<complex name="ProneToCrouch">
+			<complex name="MaxPenaltyValue">
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">5.5</field>
+				<field name="IncreasePerShot">1.79999995232</field>
+				<field name="DecreasePerSecond">11.0</field>
+				<field name="UseAimSpecialisation">false</field>
+			</complex>
+			<field name="CoolDown">0</field>
+		</complex>
+		<complex name="ProneToStand">
+			<complex name="MaxPenaltyValue">
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">5.5</field>
+				<field name="IncreasePerShot">1.79999995232</field>
+				<field name="DecreasePerSecond">11.0</field>
+				<field name="UseAimSpecialisation">false</field>
+			</complex>
+			<field name="CoolDown">0</field>
+		</complex>
+		<complex name="CrouchToProne">
+			<complex name="MaxPenaltyValue">
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">5.5</field>
+				<field name="IncreasePerShot">1.79999995232</field>
+				<field name="DecreasePerSecond">11.0</field>
+				<field name="UseAimSpecialisation">false</field>
+			</complex>
+			<field name="CoolDown">0</field>
+		</complex>
+		<complex name="CrouchToStand">
+			<complex name="MaxPenaltyValue">
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">5.5</field>
+				<field name="IncreasePerShot">1.79999995232</field>
+				<field name="DecreasePerSecond">11.0</field>
+				<field name="UseAimSpecialisation">false</field>
+			</complex>
+			<field name="CoolDown">0</field>
+		</complex>
+		<complex name="StandToProne">
+			<complex name="MaxPenaltyValue">
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">5.5</field>
+				<field name="IncreasePerShot">1.79999995232</field>
+				<field name="DecreasePerSecond">11.0</field>
+				<field name="UseAimSpecialisation">false</field>
+			</complex>
+			<field name="CoolDown">0</field>
+		</complex>
+		<complex name="StandToCrouch">
+			<complex name="MaxPenaltyValue">
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">5.5</field>
+				<field name="IncreasePerShot">1.79999995232</field>
+				<field name="DecreasePerSecond">11.0</field>
+				<field name="UseAimSpecialisation">false</field>
+			</complex>
+			<field name="CoolDown">0</field>
+		</complex>
+		<complex name="SuppressionModifier">
+			<complex name="DispersionMod">
+				<field name="MinAngleModifier">1.0</field>
+				<field name="MaxAngleModifier">1.0</field>
+				<field name="IncreasePerShotModifier">1.0</field>
+				<field name="DecreasePerSecondModifier">1.0</field>
+			</complex>
+			<field name="RecoilMagnitudeMod">1.0</field>
+			<field name="RecoilAngleMod">1.0</field>
+			<field name="LagYawMod">1.0</field>
+			<field name="LagPitchMod">1.0</field>
+		</complex>
+		<array name="Modifiers" />
+		<field name="DeviationScaleFactorZoom">1.0</field>
+		<field name="GameplayDeviationScaleFactorZoom">1.0</field>
+		<field name="DeviationScaleFactorNoZoom">4.0</field>
+		<field name="GameplayDeviationScaleFactorNoZoom">1.0</field>
+		<field ref="3ba8f49d-f793-4979-9584-01a77d8938e3" name="CameraRecoil" />
+	</instance>
+	<instance guid="3BA8F49D-F793-4979-9584-01A77D8938E3" type="GameSharedResources.CameraRecoilData">
+		<field name="SpringConstant">500.0</field>
+		<field name="SpringDamping">0.34999999404</field>
+		<field name="SpringMinThresholdAngle">0</field>
+	</instance>
+</partition>

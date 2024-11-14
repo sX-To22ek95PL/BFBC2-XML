@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<partition guid="B6D75854-EB7F-4988-A23C-7442B8DF24CB" primaryInstance="D6687C4A-E89F-4FF4-AC86-B2315A0E9B41" exportMode="All">
+	<instance guid="D6687C4A-E89F-4FF4-AC86-B2315A0E9B41" type="GameSharedResources.WeaponFiringData" id="NAM_gadget_Ammobox_Firing">
+		<field ref="c0fe005c-262c-47d8-b6d6-275112835129" name="PrimaryFire" />
+		<field name="DeployTime">0.600000023842</field>
+		<field name="ReactivateCooldownTime">0</field>
+		<field name="UseAutoAiming">false</field>
+		<field name="AutoSpotOnFire">false</field>
+		<field name="AutoSpotOnZoom">false</field>
+		<field name="SpottingDistance">350.0</field>
+		<field ref="null" name="WeaponSway" />
+		<field name="InflictSelfDamage">false</field>
+		<field name="FireOnDeploy">false</field>
+		<field name="AbortReloadOnSprint">false</field>
+		<array name="VOTypes">
+			<item ref="sound/vo/types/155f5c64-4c12-4267-904d-73df850376dc" />
+			<item ref="sound/vo/types/50609334-434d-4718-b26a-b2d170c779ff" />
+		</array>
+		<complex name="Rumble">
+			<field name="LowRumble">0</field>
+			<field name="HighRumble">0</field>
+			<field name="RumbleDuration">0.20000000298</field>
+		</complex>
+		<field name="AiDamageModifier">1.0</field>
+	</instance>
+	<instance guid="C0FE005C-262C-47D8-B6D6-275112835129" type="GameSharedResources.FiringFunctionData">
+		<array name="Dispersion">
+			<complex>
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">0</field>
+				<field name="IncreasePerShot">0</field>
+				<field name="DecreasePerSecond">0</field>
+			</complex>
+			<complex>
+				<field name="MinAngle">0</field>
+				<field name="MaxAngle">0</field>
+				<field name="IncreasePerShot">0</field>
+				<field name="DecreasePerSecond">0</field>
+			</complex>
+		</array>
+		<complex name="WeaponDispersion">
+			<field name="JumpDispersionAngle">0</field>
+			<field name="ProneTransitionDispersionAngle">0</field>
+			<field name="MoveDispersionAngle">0</field>
+			<field name="MoveZoomedDispersionAngle">0</field>
+			<field name="DecreasePerSecond">5.0</field>
+		</complex>
+		<array name="FireEffects1p" />
+		<array name="FireEffects3p" />
+		<field ref="null" name="FireSoundEffect" />
+		<field ref="null" name="ProjectileFireSound" />
+		<field ref="null" name="OutOfAmmoSoundEffect" />
+		<field ref="null" name="ReflectionSound" />
+		<complex name="Shot">
+			<complex name="InitialPosition">-0.0599999986589/-0.15000000596/0.34999999404/*zero*</complex>
+			<complex name="InitialDirection">0/0.20000000298/1.0/*zero*</complex>
+			<complex name="InitialSpeed">0/0/5.0/*zero*</complex>
+			<field name="InheritWeaponSpeedAmount">1.0</field>
+			<field ref="null" name="MuzzleExplosion" />
+			<field ref="7505dfc8-e309-451f-8033-3f499162f55b" name="ProjectileData" />
+			<field name="SpawnDelay">0</field>
+			<field name="NumberOfBulletsPerShell">1</field>
+			<field name="NumberOfBulletsPerShot">1</field>
+			<field name="RelativeTargetAiming">false</field>
+			<field name="ForceSpawnToCamera">false</field>
+			<field name="ActiveForceSpawnToCamera">true</field>
+		</complex>
+		<complex name="FireLogic">
+			<complex name="HoldAndRelease">
+				<field name="MaxHoldTime">0</field>
+				<field name="MinPowerModifier">1.0</field>
+				<field name="MaxPowerModifier">1.0</field>
+				<field name="PowerIncreasePerSecond">0</field>
+				<field name="Delay">0</field>
+				<field name="ForceFireWhenKilledHolding">true</field>
+				<field name="KilledHoldingPowerModifier">0</field>
+			</complex>
+			<complex name="BoltAction">
+				<field name="BoltActionDelay">0.5</field>
+				<field name="BoltActionTime">1.0</field>
+				<field name="HoldBoltActionUntilFireRelease">true</field>
+				<field name="HoldBoltActionUntilZoomRelease">false</field>
+			</complex>
+			<complex name="Recoil">
+				<field name="MaxRecoilAngleX">0</field>
+				<field name="MinRecoilAngleX">0</field>
+				<field name="MaxRecoilAngleY">0</field>
+				<field name="MinRecoilAngleY">0</field>
+				<field name="MaxRecoilAngleZ">0</field>
+				<field name="MinRecoilAngleZ">0</field>
+				<field name="MaxRecoilFov">0</field>
+				<field name="MinRecoilFov">0</field>
+				<field name="RecoilFollowsDispersion">true</field>
+			</complex>
+			<field name="FireInputAction">EiaFire</field>
+			<field name="OrderInputAction">EiaOrder</field>
+			<field name="ReloadInputAction">EiaReload</field>
+			<field name="TriggerPullWeight">0.10000000149</field>
+			<field name="RateOfFire">100.0</field>
+			<field name="ClientFireRateMultiplier">0.670000016689</field>
+			<field name="ReloadDelay">0</field>
+			<field name="ReloadTime">0</field>
+			<field name="PostReloadSequenceTime">0</field>
+			<field name="ReloadThreshold">1.0</field>
+			<field name="PreFireDelay">0</field>
+			<field name="ZoomBeforeFireDelay">0</field>
+			<field name="WaitForTriggerRelease">true</field>
+			<field name="WaitForZoomRelease">false</field>
+			<field name="HoldReloadUntilFireRelease">false</field>
+			<field name="HoldReloadUntilZoomRelease">false</field>
+			<field name="ReloadLogic">rlReloadUnaffectedByWeaponSwitch</field>
+			<field name="ReloadType">rtMagazine</field>
+			<field name="FireLogicType">fltHoldAndRelease</field>
+		</complex>
+		<complex name="Ammo">
+			<field name="MagazineCapacity">1</field>
+			<field name="NumberOfMagazines">1</field>
+			<field name="TraceFrequency">0</field>
+			<field name="AmmoPickupMinAmount">0</field>
+			<field name="AmmoPickupMaxAmount">0</field>
+			<field name="AutoReplenishMagazine">true</field>
+			<field name="AutoReplenishDelay">10.0</field>
+			<field name="AmmoBoxPickupRate">0</field>
+			<field name="AmmoBoxPickupAmount">1</field>
+		</complex>
+		<complex name="OverHeat">
+			<field name="HeatPerBullet">0</field>
+			<field name="HeatDropPerSecond">0.20000000298</field>
+			<field name="OverHeatPenaltyTime">0</field>
+			<field name="OverHeatThreshold">0.800000011921</field>
+			<complex name="OverHeatEffect">
+				<field ref="null" name="Effect" />
+				<complex name="Offset">0/0/0/*zero*</complex>
+				<complex name="Rotation">0/0/0/*zero*</complex>
+				<complex name="ZoomOffset">0/0/0/*zero*</complex>
+				<field name="UseZoomOffset">false</field>
+				<complex name="ZoomRotation">0/0/0/*zero*</complex>
+				<field name="UseZoomRotation">false</field>
+				<field name="DisableDuringZoom">false</field>
+			</complex>
+		</complex>
+		<field name="UsePrimaryAmmo">true</field>
+		<field name="UnlimitedAmmoForAI">false</field>
+		<field name="LoopingFireSound">false</field>
+		<field name="SelfHealTimeWhenDeployed">0</field>
+		<field name="IsCounterMeasureWeapon">false</field>
+	</instance>
+	<instance guid="7505DFC8-E309-451F-8033-3F499162F55B" type="GameSharedResources.AmmoBoxEntityData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<complex name="Transform">1.0/0/0/*zero*/0/1.0/0/*zero*/0/0/1.0/*zero*/0/0/0/*zero*</complex>
+		<field name="Enabled">true</field>
+		<field ref="f7a24e1f-0dd5-40fc-a8fe-f208173d9dff" name="PhysicsData" />
+		<field name="Material">MedKit</field>
+		<field name="IsObsolete">false</field>
+		<field ref="null" name="ReplacementObject" />
+		<field name="InitialSpeed">351.0</field>
+		<field name="TimeToLive">0</field>
+		<field name="MaxCount">1</field>
+		<field name="InitMeshHideTime">0.0900000035763</field>
+		<field name="VisualConvergeDistance">30.0</field>
+		<field name="DetonateOnTimeout">false</field>
+		<field ref="null" name="Explosion" />
+		<field ref="objects/weapons/handheld/vietnam/projectiles/nam_projectiles_ammobox_mesh/f44302e2-77fd-4b59-ba3c-875bb53383be" name="Mesh" />
+		<field ref="null" name="TrailEffect" />
+		<field name="IsAttachable">false</field>
+		<field name="IsAttachableToSoldiers">false</field>
+		<field name="IsAttachableToVehicles">false</field>
+		<field name="ExtraDamping">false</field>
+		<complex name="InitialAngularVelocity">0/0/0/*zero*</complex>
+		<field name="VehicleDetonationActivationDelay">0</field>
+		<field name="VehicleDetonationRadius">0</field>
+		<field name="HasRemoteDetonator">false</field>
+		<field name="HasVehicleDetonation">false</field>
+		<field ref="null" name="AttachSound" />
+		<field name="TimeToLiveOnPlayerDeath">60.0</field>
+		<field name="IsDestructible">false</field>
+		<field name="ReceivesExplosionDamage">false</field>
+		<field name="Health">100.0</field>
+		<field name="ActiveSpottedTime">0</field>
+		<field name="ImpulseScale">0.10000000149</field>
+		<complex name="AmmoResupply">
+			<field name="Radius">3.0</field>
+			<field name="Ammo">10</field>
+			<field name="Delay">1.5</field>
+			<field name="UpdateFrequency">1</field>
+		</complex>
+	</instance>
+	<instance guid="F7A24E1F-0DD5-40FC-A8FE-F208173D9DFF" type="Physics.PhysicsEntityData">
+		<field ref="objects/weapons/handheld/vietnam/projectiles/nam_projectiles_ammobox_havok/965e6efd-09e6-4a5f-b2f8-d1f6410b4126" name="Asset" />
+		<field ref="6284cdee-5865-443b-a73c-758aabe2ff48" name="FloatPhysics" />
+		<field name="Mass">-1.0</field>
+		<field name="AllowZeroMayaMass">false</field>
+		<complex name="InertiaModifier">1.0/1.0/1.0/*nonzero*</complex>
+		<field name="Friction">-1.0</field>
+		<field name="Restitution">-1.0</field>
+		<field ref="null" name="Proximity" />
+	</instance>
+	<instance guid="6284CDEE-5865-443B-A73C-758AABE2FF48" type="Physics.BoxFloatPhysicsData">
+		<field name="Density">0.5</field>
+		<field name="FilledDensity">1.20000004768</field>
+	</instance>
+</partition>

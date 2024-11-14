@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<partition guid="2F69C401-4161-4EE7-B7A6-B748A521E425" primaryInstance="3D11904C-8D0E-4435-9F91-931A165F1AA2" exportMode="All">
+	<instance guid="3D11904C-8D0E-4435-9F91-931A165F1AA2" type="Audio.SoundTemplate" id="Smoke_Dust_Sizzle_01">
+		<field name="Name">Sound/Explosions/Particle_Tails_2/Smoke_Dust/Smoke_Dust_Sizzle_01</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<array name="Connections" />
+		<array name="AudioConnections">
+			<complex>
+				<field name="SourceId">3</field>
+				<field name="TargetId">4</field>
+			</complex>
+		</array>
+		<array name="UnconnectedInputs" />
+		<array name="Outputs" />
+		<array name="Nodes">
+			<item ref="12bbcfda-7178-4518-82dd-6abf86f7ebf2" />
+			<item ref="24703860-74e3-4300-805d-7010dd90d31f" />
+		</array>
+		<array name="PublicParameters" />
+		<array name="PublicEvents">
+			<item ref="e2d3d7fd-7db0-43ec-bada-14136852a37f" />
+		</array>
+		<field name="WireCount">2</field>
+		<field ref="0d51d83c-f662-41f9-8939-910f782b8012" name="SoundSource" />
+		<field ref="6538ff93-4f19-11e0-bef3-9e12707b7abb" name="ReceiveNode" />
+		<field name="MaxInstanceCount">4</field>
+		<field name="Loudness">95.0</field>
+		<field name="AILoudness">-1.0</field>
+		<field name="ObstructionRadius">1.0</field>
+		<field name="DopplerFactor">1.0</field>
+		<field name="LfeLoudness">-6.0</field>
+		<field name="DialogLoudness">-6.0</field>
+		<field name="ReverbLoudness">-12.0</field>
+		<field name="MasterPitch">1.0</field>
+		<field name="MasterMinDistance">0</field>
+		<field name="MasterDistanceSlope">1.0</field>
+		<field name="SkipDuplicateSpawns">true</field>
+		<field name="PreventDuplicateSpawnDistance">10.0</field>
+		<field name="PreventDuplicateSpawnFrameCount">10</field>
+	</instance>
+	<instance guid="0D51D83C-F662-41F9-8939-910F782B8012" type="Audio.SoundSource">
+		<array name="Emitters">
+			<item ref="02db1ad5-576a-4715-bfea-1da2cabcbc7a" />
+		</array>
+		<field name="Name" />
+	</instance>
+	<instance guid="E2D3D7FD-7DB0-43EC-BADA-14136852A37F" type="Audio.SoundGraphEvent">
+		<field name="Name">Start</field>
+		<field name="DefaultValue">0</field>
+		<field name="Id">230748069</field>
+		<field name="WireIndex">0</field>
+	</instance>
+	<instance guid="24703860-74E3-4300-805D-7010DD90D31F" type="Audio.OutputNode">
+		<field name="EffectDescCachedIndex">-1</field>
+		<field name="Name">Output</field>
+		<array name="Entries">
+			<item ref="a4cf933d-def1-4de7-b552-2c4fd75c3494" />
+		</array>
+		<field ref="2d83e2df-331a-4c2a-80f6-5fc88f87f813" name="Lfe" />
+		<field ref="null" name="LfeSoundEmitter" />
+		<field ref="null" name="DialogSoundEmitter" />
+		<field ref="859d3f6f-36cb-4fdc-aceb-55e4975b6123" name="Dialog" />
+		<field ref="cb9f60cf-8799-499a-abc0-d2027953d25e" name="BypassHeadroom" />
+		<field name="ConnectTo">GameMixMain</field>
+	</instance>
+	<instance guid="2D83E2DF-331A-4C2A-80F6-5FC88F87F813" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptAudio</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="859D3F6F-36CB-4FDC-ACEB-55E4975B6123" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptAudio</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="CB9F60CF-8799-499A-ABC0-D2027953D25E" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptParam</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="36F9AD1B-9EBC-4E98-B207-C705EB094C6B" type="Audio.SoundOutput">
+		<field ref="02db1ad5-576a-4715-bfea-1da2cabcbc7a" name="Emitter" />
+		<field ref="0d51d83c-f662-41f9-8939-910f782b8012" name="Source" />
+	</instance>
+	<instance guid="A4CF933D-DEF1-4DE7-B552-2C4FD75C3494" type="Audio.OutputEntry">
+		<field ref="37f49a62-3d9c-4bc1-9a42-df620c23eee5" name="In" />
+		<field ref="36f9ad1b-9ebc-4e98-b207-c705eb094c6b" name="Output" />
+	</instance>
+	<instance guid="37F49A62-3D9C-4BC1-9A42-DF620C23EEE5" type="Audio.SoundNodePort">
+		<field name="WireIndex">4</field>
+		<field name="PortType">SgptAudio</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="9F7C35B9-0C1F-4BEE-A0D0-9FBE6B2145C8" type="Audio.ReceiveNode">
+		<field name="EffectDescCachedIndex">-1</field>
+		<field name="Name">Receive</field>
+		<array name="Entries">
+			<item ref="19081159-bd32-4119-aa9b-9c5b83687ef5" />
+		</array>
+	</instance>
+	<instance guid="2E963F04-A26B-43B6-AA0B-150AE9031CA2" type="Audio.SoundNodePort">
+		<field name="WireIndex">1</field>
+		<field name="PortType">SgptEvent</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="19081159-BD32-4119-AA9B-9C5B83687EF5" type="Audio.ReceiveEntry">
+		<field ref="2e963f04-a26b-43b6-aa0b-150ae9031ca2" name="Out" />
+		<field ref="e2d3d7fd-7db0-43ec-bada-14136852a37f" name="Source" />
+		<field name="Parameter">0</field>
+		<field name="SavedValue">0</field>
+	</instance>
+	<instance guid="12BBCFDA-7178-4518-82DD-6ABF86F7EBF2" type="Audio.SamplerNode">
+		<field name="EffectDescCachedIndex">-1</field>
+		<field name="Name">Sampler</field>
+		<array name="Groups">
+			<item ref="54fb9358-6bc0-412a-bd3d-c6dedeeb8d39" />
+		</array>
+	</instance>
+	<instance guid="54FB9358-6BC0-412A-BD3D-C6DEDEEB8D39" type="Audio.SamplerGroup">
+		<field ref="ab46c240-cc58-4a53-851a-2b05c76d0b6d" name="Wave" />
+		<field name="Random">false</field>
+		<field name="RandomOnDemandVariationCount">0</field>
+		<field name="ZeroLatency">false</field>
+		<field ref="9f5117c5-5456-4f3e-ac1d-4da710b9cff6" name="Offset" />
+		<field ref="780e8201-46e3-4d6c-a05a-051bd3dffea8" name="Delay" />
+		<field ref="7bc5afea-1d4d-4713-a68d-7b08ee12346d" name="Pitch" />
+		<field ref="3e3b0eb8-7925-4da8-8c22-60484632e9db" name="Amplitude" />
+		<field ref="8ee3efd2-d6e6-4c02-ab15-7a5dda61bf66" name="Trigger" />
+		<field ref="2a8a0b73-4f15-4ff8-a405-deb10b5aedfe" name="Release" />
+		<field ref="0cbd6a1d-5780-41c8-b20c-f9d3e5d6e617" name="Output" />
+		<field ref="39e5e0a0-ee68-4479-b6ef-af707df2c6e5" name="Finished" />
+		<array name="WaveMap">
+			<item ref="c6e26e29-8cd8-4e35-8447-dab8e0ab8749" />
+		</array>
+		<field name="ChannelCount">2</field>
+	</instance>
+	<instance guid="AB46C240-CC58-4A53-851A-2B05C76D0B6D" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptParam</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="9F5117C5-5456-4F3E-AC1D-4DA710B9CFF6" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptParam</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="780E8201-46E3-4D6C-A05A-051BD3DFFEA8" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptParam</field>
+		<field name="UnconnectedValue">2.0</field>
+	</instance>
+	<instance guid="7BC5AFEA-1D4D-4713-A68D-7B08EE12346D" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptParam</field>
+		<field name="UnconnectedValue">1.0</field>
+	</instance>
+	<instance guid="3E3B0EB8-7925-4DA8-8C22-60484632E9DB" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptParam</field>
+		<field name="UnconnectedValue">1.0</field>
+	</instance>
+	<instance guid="8EE3EFD2-D6E6-4C02-AB15-7A5DDA61BF66" type="Audio.SoundNodePort">
+		<field name="WireIndex">1</field>
+		<field name="PortType">SgptEvent</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="2A8A0B73-4F15-4FF8-A405-DEB10B5AEDFE" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptEvent</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="0CBD6A1D-5780-41C8-B20C-F9D3E5D6E617" type="Audio.SoundNodePort">
+		<field name="WireIndex">3</field>
+		<field name="PortType">SgptAudio</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="39E5E0A0-EE68-4479-B6EF-AF707DF2C6E5" type="Audio.SoundNodePort">
+		<field name="WireIndex">-1</field>
+		<field name="PortType">SgptEvent</field>
+		<field name="UnconnectedValue">0</field>
+	</instance>
+	<instance guid="C6E26E29-8CD8-4E35-8447-DAB8E0AB8749" type="Audio.SamplerWaveMapEntry">
+		<field ref="sound/explosions/particle_tails_2/smoke_dust/smoke_dust_sizzle_01_wave/d09c7266-94d3-4683-9c8a-216328a7c8b5" name="Wave" />
+		<field name="BasePitch">1.0</field>
+		<field name="Loop">LtNone</field>
+	</instance>
+	<instance guid="A942F216-F352-4E4D-86F9-4300A985B020" type="Audio.SoundNodeConnection">
+		<field ref="9f7c35b9-0c1f-4bee-a0d0-9fbe6b2145c8" name="SourceNode" />
+		<field ref="12bbcfda-7178-4518-82dd-6abf86f7ebf2" name="TargetNode" />
+		<field ref="2e963f04-a26b-43b6-aa0b-150ae9031ca2" name="SourcePort" />
+		<field ref="8ee3efd2-d6e6-4c02-ab15-7a5dda61bf66" name="TargetPort" />
+	</instance>
+	<instance guid="F0EF17D2-513E-46C8-8DEE-6B329BD60886" type="Audio.SoundNodeConnection">
+		<field ref="12bbcfda-7178-4518-82dd-6abf86f7ebf2" name="SourceNode" />
+		<field ref="24703860-74e3-4300-805d-7010dd90d31f" name="TargetNode" />
+		<field ref="0cbd6a1d-5780-41c8-b20c-f9d3e5d6e617" name="SourcePort" />
+		<field ref="37f49a62-3d9c-4bc1-9a42-df620c23eee5" name="TargetPort" />
+	</instance>
+	<instance guid="02DB1AD5-576A-4715-BFEA-1DA2CABCBC7A" type="Audio.SoundSourceFlatEmitter">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<field name="MinDistance">15.0</field>
+		<field name="DistanceSlope">2.0</field>
+		<field name="AttenuationType">DatLinear</field>
+		<field name="Solo">false</field>
+		<field name="HFDampingDistance">0.699999988079</field>
+		<field name="HFDampingObstruction">0.800000011921</field>
+		<field name="HFDampingOcclusion">1.0</field>
+		<field name="HFDampingAngle">1.0</field>
+		<field name="Gain">0</field>
+		<field name="Angle">90.0</field>
+		<field name="Bleed">0</field>
+	</instance>
+	<instance guid="6538FF93-4F19-11E0-BEF3-9E12707B7ABB" type="Audio.ReceiveNode">
+		<field name="EffectDescCachedIndex">-1</field>
+		<field name="Name" />
+		<array name="Entries">
+			<item ref="19081159-bd32-4119-aa9b-9c5b83687ef5" />
+		</array>
+	</instance>
+</partition>

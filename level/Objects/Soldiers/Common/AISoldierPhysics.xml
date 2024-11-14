@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<partition guid="17CB1794-ED07-4202-B1CB-896962E8FC37" primaryInstance="E06F0035-6618-4BE8-993D-A1F700E555C5" exportMode="All">
+	<instance guid="E06F0035-6618-4BE8-993D-A1F700E555C5" type="Physics.CharacterPhysicsData" id="AISoldierPhysics">
+		<field name="Name">Objects/Soldiers/Common/AISoldierPhysics</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<array name="Poses">
+			<item ref="bf347930-f3ec-45d1-a26b-9cc75eceea42" />
+			<item ref="8679597e-5e7c-49a8-81c4-3fa41a0da392" />
+		</array>
+		<array name="States">
+			<item ref="96e84677-f136-4103-922e-cfbc0e707350" />
+			<item ref="2101ae56-d1b0-4d5d-a042-aa347546c711" />
+			<item ref="66f0ff19-06aa-4068-bc69-9cd430f3b713" />
+			<item ref="a0d634f9-f059-4e69-b940-67d7e48a0db7" />
+			<item ref="0dfbfc07-e6e6-48b6-aaec-264db0312c7e" />
+			<item ref="b475a577-b813-4473-b07f-d5c18567aafa" />
+			<item ref="4101fa15-341f-4939-9151-5f8c0e2f5444" />
+			<item ref="b6b75cd7-6dc4-41ed-9783-b9938e0087ad" />
+			<item ref="74157318-1984-4e94-88b3-2f5b871a9177" />
+		</array>
+		<field ref="ac95110f-183f-432a-96e1-96a7d42992f2" name="Sprint" />
+		<field name="Material">SoldierBody</field>
+		<field name="PushableObjectWeight">100</field>
+		<field name="Mass">100.0</field>
+		<field name="MaxAscendAngle">85.0</field>
+		<field name="PhysicalRadius">0.34999999404</field>
+		<field name="WaterDepthLimit">1.39999997616</field>
+		<field name="InputAcceleration">3.0</field>
+		<field name="LadderAcceptAngle">30.0</field>
+		<field name="LadderAcceptAnglePitch">-30.0</field>
+		<field name="JumpPenaltyTime">2.0</field>
+		<field name="JumpPenaltyFactor">0.300000011921</field>
+		<complex name="Rumble">
+			<field name="LowRumbleModifier">0.300000011921</field>
+			<field name="HighRumbleModifier">0.600000023842</field>
+			<field name="RumbleDuration">0.20000000298</field>
+			<field name="RumbleImpulseClamp">300.0</field>
+		</complex>
+		<field name="SpeedPenaltyOnDamage">0.5</field>
+		<field name="SpeedPenaltyOnDamageTime">0.300000011921</field>
+	</instance>
+	<instance guid="96E84677-F136-4103-922E-CFBC0E707350" type="Physics.OnGroundStateData">
+		<array name="PoseInfo">
+			<item ref="4ce0cd8f-6e4f-483d-be1e-c1f450c3e738" />
+			<item ref="68a60e91-a4f3-4fc8-b01f-9bd54e8849f0" />
+		</array>
+		<field name="JumpDelay">0.10000000149</field>
+		<field name="JumpStaminaPenalty">0</field>
+		<field name="AllowedDistanceFromGround">0.5</field>
+		<field name="GroundHugging">true</field>
+		<field name="LimitDownwardVelocity">false</field>
+		<field name="LimitStrafeVelocity">false</field>
+	</instance>
+	<instance guid="2101AE56-D1B0-4D5D-A042-AA347546C711" type="Physics.JumpStateData">
+		<array name="PoseInfo">
+			<item ref="d1081320-982f-4c97-b4f2-2e038dd0e5be" />
+		</array>
+		<field name="JumpHeight">0.949999988079</field>
+		<field name="JumpEffectSize">0.119999997318</field>
+	</instance>
+	<instance guid="66F0FF19-06AA-4068-BC69-9CD430F3B713" type="Physics.InAirStateData">
+		<array name="PoseInfo">
+			<item ref="2d9a3a64-6612-4deb-914e-0008190bcd2d" />
+			<item ref="f5975dc8-2ddc-40f0-a03d-ea105521e5b1" />
+		</array>
+		<field name="FreeFallVelocity">15.0</field>
+	</instance>
+	<instance guid="4CE0CD8F-6E4F-483D-BE1E-C1F450C3E738" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">4.5</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0.800000011921</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0.5</field>
+		<field name="SprintMultiplier">1.5</field>
+	</instance>
+	<instance guid="68A60E91-A4F3-4FC8-B01F-9BD54E8849F0" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Crouch</field>
+		<field name="Velocity">2.5</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0.800000011921</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0.10000000149</field>
+		<field name="SprintMultiplier">3.0</field>
+	</instance>
+	<instance guid="BF347930-F3EC-45D1-A26B-9CC75ECEEA42" type="Physics.CharacterPoseData">
+		<complex name="EyePosition">-0.15000000596/1.39999997616/0/*nonzero*</complex>
+		<array name="ThrottleModifierCurve">0/0/0.10000000149/0/0.109999999404/0.5/0.800000011921/0.5/0.810000002384/1.0/1.0/1.0</array>
+		<field name="StepHeight">0.300000011921</field>
+		<field name="Height">1.75</field>
+		<field name="TransitionTime">0.34999999404</field>
+		<complex name="LookConstraints">
+			<field name="MinLookYaw">-90.0</field>
+			<field name="MaxLookYaw">90.0</field>
+			<field name="MinLookPitch">-45.0</field>
+			<field name="MaxLookPitch">45.0</field>
+		</complex>
+		<field name="PoseType">Stand</field>
+	</instance>
+	<instance guid="8679597E-5E7C-49A8-81C4-3FA41A0DA392" type="Physics.CharacterPoseData">
+		<complex name="EyePosition">-0.15000000596/0.800000011921/0/*nonzero*</complex>
+		<array name="ThrottleModifierCurve">0/0/0.10000000149/0/0.109999999404/0.5/0.800000011921/0.5/0.810000002384/1.0/1.0/1.0</array>
+		<field name="StepHeight">0.300000011921</field>
+		<field name="Height">1.20000004768</field>
+		<field name="TransitionTime">0.34999999404</field>
+		<complex name="LookConstraints">
+			<field name="MinLookYaw">-90.0</field>
+			<field name="MaxLookYaw">90.0</field>
+			<field name="MinLookPitch">-45.0</field>
+			<field name="MaxLookPitch">45.0</field>
+		</complex>
+		<field name="PoseType">Crouch</field>
+	</instance>
+	<instance guid="D1081320-982F-4C97-B4F2-2E038DD0E5BE" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">6.0</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0.10000000149</field>
+		<field name="SprintMultiplier">1.20000004768</field>
+	</instance>
+	<instance guid="EAA5B97D-34C4-4A3D-BDF8-65E855DDD73D" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Crouch</field>
+		<field name="Velocity">3.5</field>
+		<field name="AccelerationGain">1.0</field>
+		<field name="DecelerationGain">1.0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">1.0</field>
+		<field name="SprintMultiplier">0</field>
+	</instance>
+	<instance guid="2D9A3A64-6612-4DEB-914E-0008190BCD2D" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">4.5</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0</field>
+		<field name="SprintMultiplier">1.5</field>
+	</instance>
+	<instance guid="3DD8B0B3-EBD6-49F7-B9DE-209D680D5F88" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Crouch</field>
+		<field name="Velocity">3.5</field>
+		<field name="AccelerationGain">1.0</field>
+		<field name="DecelerationGain">1.0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">1.0</field>
+		<field name="SprintMultiplier">0</field>
+	</instance>
+	<instance guid="A0D634F9-F059-4E69-B940-67D7E48A0DB7" type="Physics.FallingStateData">
+		<array name="PoseInfo">
+			<item ref="2a99a8f0-c824-4087-9fc1-8a38851a1dbf" />
+		</array>
+	</instance>
+	<instance guid="0DFBFC07-E6E6-48B6-AAEC-264DB0312C7E" type="Physics.ParachuteStateData">
+		<array name="PoseInfo">
+			<item ref="51ed1014-3064-480d-a283-a9027c387a72" />
+		</array>
+		<field name="VerticalVelocity">4.0</field>
+		<field name="VerticalGain">0.109999999404</field>
+	</instance>
+	<instance guid="2A99A8F0-C824-4087-9FC1-8A38851A1DBF" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">9.0</field>
+		<field name="AccelerationGain">0.0500000007451</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0</field>
+		<field name="SprintMultiplier">0</field>
+	</instance>
+	<instance guid="51ED1014-3064-480D-A283-A9027C387A72" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">9.0</field>
+		<field name="AccelerationGain">0.0500000007451</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0</field>
+		<field name="SprintMultiplier">0</field>
+	</instance>
+	<instance guid="B475A577-B813-4473-B07F-D5C18567AAFA" type="Physics.SwimmingStateData">
+		<array name="PoseInfo">
+			<item ref="0b539001-f768-4cea-bbc6-c7c02f6def50" />
+		</array>
+		<field name="BodyUnderWater">1.39999997616</field>
+	</instance>
+	<instance guid="0B539001-F768-4CEA-BBC6-C7C02F6DEF50" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">3.5</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0.800000011921</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0.0500000007451</field>
+		<field name="SprintMultiplier">0</field>
+	</instance>
+	<instance guid="AC95110F-183F-432A-96E1-96A7D42992F2" type="Physics.CharacterSprintData">
+		<field name="SprintPowerDecreasePerSecond">0</field>
+		<field name="SprintPowerIncreasePerSecond">0.125</field>
+		<field name="SprintMinimumPower">0.25</field>
+	</instance>
+	<instance guid="4101FA15-341F-4939-9151-5F8C0E2F5444" type="Physics.ClimbingStateData">
+		<array name="PoseInfo">
+			<item ref="49535614-abbe-4f94-895f-6a4b76cfbe99" />
+		</array>
+		<field name="LateralInputScale">0</field>
+		<field name="DownAngleLimit">35.0</field>
+		<field name="DropOffAngle">30.0</field>
+		<field name="AttractionVelocity">1.0</field>
+		<field name="PushAwayVelocity">5.0</field>
+		<field name="ClimbHeightOffset">0.15000000596</field>
+	</instance>
+	<instance guid="49535614-ABBE-4F94-895F-6A4B76CFBE99" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">2.0</field>
+		<field name="AccelerationGain">1.0</field>
+		<field name="DecelerationGain">1.0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">1.0</field>
+		<field name="SprintMultiplier">0</field>
+	</instance>
+	<instance guid="B6B75CD7-6DC4-41ED-9783-B9938E0087AD" type="Physics.AnimationControlledStateData">
+		<array name="PoseInfo">
+			<item ref="45bd3c1a-be01-4357-87d3-64b565eee4fc" />
+			<item ref="f35f045e-29b0-4082-a159-3e33cadfad5a" />
+		</array>
+		<field name="UpNormalTolerance">0</field>
+	</instance>
+	<instance guid="45BD3C1A-BE01-4357-87D3-64B565EEE4FC" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">4.5</field>
+		<field name="AccelerationGain">1.0</field>
+		<field name="DecelerationGain">1.0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">1.0</field>
+		<field name="SprintMultiplier">1.0</field>
+	</instance>
+	<instance guid="F35F045E-29B0-4082-A159-3E33CADFAD5A" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Crouch</field>
+		<field name="Velocity">2.5</field>
+		<field name="AccelerationGain">1.0</field>
+		<field name="DecelerationGain">1.0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">1.0</field>
+		<field name="SprintMultiplier">1.0</field>
+	</instance>
+	<instance guid="74157318-1984-4E94-88B3-2F5B871A9177" type="Physics.SlidingStateData">
+		<array name="PoseInfo">
+			<item ref="b0d41683-da72-4af0-800b-876f9d3127d6" />
+			<item ref="fa803665-20c4-4fe2-acf4-9383a21d8e25" />
+		</array>
+		<field name="HorizontalInputScale">0.300000011921</field>
+		<field name="GravityScale">1.0</field>
+	</instance>
+	<instance guid="B0D41683-DA72-4AF0-800B-876F9D3127D6" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Stand</field>
+		<field name="Velocity">4.5</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0</field>
+		<field name="SprintMultiplier">1.5</field>
+	</instance>
+	<instance guid="FA803665-20C4-4FE2-ACF4-9383A21D8E25" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Crouch</field>
+		<field name="Velocity">4.5</field>
+		<field name="AccelerationGain">0</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0</field>
+		<field name="SprintMultiplier">1.5</field>
+	</instance>
+	<instance guid="F5975DC8-2DDC-40F0-A03D-EA105521E5B1" type="Physics.CharacterStatePoseInfo">
+		<field name="PoseType">Crouch</field>
+		<field name="Velocity">4.5</field>
+		<field name="AccelerationGain">0.10000000149</field>
+		<field name="DecelerationGain">0</field>
+		<field name="StrafeDecelerationGain">1.0</field>
+		<field name="SprintGain">0</field>
+		<field name="SprintMultiplier">1.5</field>
+	</instance>
+</partition>

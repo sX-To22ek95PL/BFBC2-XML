@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<partition guid="92C611A0-78A9-4E6B-A191-27B828B29EE6" primaryInstance="16EDA110-6956-48D6-874A-CB0DF6A66ECA" exportMode="All">
+	<instance guid="16EDA110-6956-48D6-874A-CB0DF6A66ECA" type="Entity.ObjectBlueprint" id="Box_FruitCrate">
+		<field name="Name">Objects/Objects/Box_FruitCrate/Box_FruitCrate</field>
+		<field name="MemoryReportGroup">MemoryReportGroup_default</field>
+		<array name="Objects" />
+		<array name="EventConnections" />
+		<array name="DataConnections" />
+		<field ref="null" name="Descriptor" />
+		<field ref="67570d75-0d72-4608-b77e-f340248b5bf5" name="Object" />
+	</instance>
+	<instance guid="A6AE684D-437C-4F6C-94C5-20E9696E8912" type="Physics.PhysicsEntityData">
+		<field ref="objects/objects/box_fruitcrate/box_fruitcrate_havok/6b07a360-07a4-11dc-837f-87379d9487a2" name="Asset" />
+		<field ref="770482d5-5162-4c5c-93c6-c502ab4ba702" name="FloatPhysics" />
+		<field name="Mass">10.0</field>
+		<field name="AllowZeroMayaMass">false</field>
+		<complex name="InertiaModifier">1.0/1.0/1.0/*nonzero*</complex>
+		<field name="Friction">1.0</field>
+		<field name="Restitution">0.10000000149</field>
+		<field ref="null" name="Proximity" />
+	</instance>
+	<instance guid="68A88271-DD46-4CD7-90E8-2322BA860DDA" type="GameSharedResources.ExplosionEntityData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<complex name="Transform">1.0/0/0/*nonzero*/0/1.0/0/*nonzero*/0/0/1.0/*nonzero*/0/0/0/*nonzero*</complex>
+		<field name="Enabled">false</field>
+		<field ref="effects/destruction/generic/object/debris/wood/effect_woodensplinter_fresh_01/e921a99b-3d26-45a5-b699-3abca0d46706" name="DetonationEffect" />
+		<field name="SootDecal">Decals/SmallSootTemplate</field>
+		<field name="Material">Small_explosion</field>
+		<field name="EmpTime">0</field>
+		<field name="CoreRadius">0.5</field>
+		<field name="BlastDamage">0.0500000007451</field>
+		<field name="InnerBlastRadius">0.00999999977648</field>
+		<field name="BlastRadius">0.0500000007451</field>
+		<field name="BlastImpulse">0.0500000007451</field>
+		<field name="ShockwaveDamage">0.15000000596</field>
+		<field name="ShockwaveRadius">0.15000000596</field>
+		<field name="ShockwaveImpulse">0.15000000596</field>
+		<field name="ShockwaveTime">0.0250000003725</field>
+		<field name="DisableOcclusion">false</field>
+		<field name="DisableStaticEntityOcclusion">false</field>
+		<field name="UseAsPreDestuctionEntity">false</field>
+		<field name="UnspotsOnExplode">false</field>
+	</instance>
+	<instance guid="B980B1DA-8828-4667-B5E4-1FC4942D16D0" type="GameSharedResources.PartComponentData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name" />
+		<complex name="Transform">1.0/0/0/*nonzero*/0/1.0/0/*nonzero*/0/0/1.0/*nonzero*/0/0/0/*nonzero*</complex>
+		<field name="Enabled">true</field>
+		<array name="HealthStates">
+			<item ref="26f8d226-6c4b-4856-a048-cf49131a7902" />
+			<item ref="498f3529-aaa0-414f-b816-e5362b7d7a71" />
+		</array>
+		<array name="NeighbourLinks"></array>
+		<field name="IsSupported">false</field>
+		<field name="IsFragile">false</field>
+		<field name="IsLoadBearing">false</field>
+		<field name="CanTriggerCollapse">true</field>
+		<field name="CanCollapse">true</field>
+	</instance>
+	<instance guid="26F8D226-6C4B-4856-A048-CF49131A7902" type="GameSharedResources.HealthStateData">
+		<array name="Effects">
+			<item ref="effects/destruction/generic/object/effect_destruction_object_s_01/cb821d09-a127-47b8-baf1-2dfa620dc973" />
+			<item ref="effects/destruction/generic/object/debris/wood/effect_woodensplinter_grey_01/3eba1aeb-6d75-42e8-a2e0-128477bc1180" />
+		</array>
+		<field ref="68a88271-dd46-4cd7-90e8-2322ba860dda" name="Explosion" />
+		<array name="LoosePartPhysicsArray" />
+		<field ref="null" name="SpawnedBanger" />
+		<field name="CopyDamageToBanger">true</field>
+		<field ref="null" name="LoosePartPhysics" />
+		<field ref="null" name="SpawnedBangerImpulseParams" />
+		<field name="MeshName" />
+		<field name="PreferedShapeType">STBox</field>
+		<field name="Health">0</field>
+	</instance>
+	<instance guid="498F3529-AAA0-414F-B816-E5362B7D7A71" type="GameSharedResources.HealthStateData">
+		<array name="Effects" />
+		<field ref="null" name="Explosion" />
+		<array name="LoosePartPhysicsArray" />
+		<field ref="null" name="SpawnedBanger" />
+		<field name="CopyDamageToBanger">true</field>
+		<field ref="null" name="LoosePartPhysics" />
+		<field ref="null" name="SpawnedBangerImpulseParams" />
+		<field name="MeshName">Box_FruitCrate</field>
+		<field name="PreferedShapeType">STBox</field>
+		<field name="Health">100.0</field>
+	</instance>
+	<instance guid="770482D5-5162-4C5C-93C6-C502AB4BA702" type="Physics.BoxFloatPhysicsData">
+		<field name="Density">0.600000023842</field>
+		<field name="FilledDensity">1.20000004768</field>
+	</instance>
+	<instance guid="67570D75-0D72-4608-B77E-F340248B5BF5" type="GameSharedResources.DynamicModelEntityData">
+		<array name="Components" />
+		<field name="Enumeration">0</field>
+		<field name="Name">Objects/Objects/Box_FruitCrate/Box_FruitCrate</field>
+		<complex name="Transform">1.0/0/0/*nonzero*/0/1.0/0/*nonzero*/0/0/1.0/*nonzero*/0/0/0/*nonzero*</complex>
+		<field name="Enabled">true</field>
+		<field ref="a6ae684d-437c-4f6c-94c5-20e9696e8912" name="PhysicsData" />
+		<field name="Material">Metal</field>
+		<field name="IsObsolete">false</field>
+		<field ref="null" name="ReplacementObject" />
+		<field name="TrackedByAI">false</field>
+		<field ref="b980b1da-8828-4667-b5e4-1fc4942d16d0" name="Part" />
+		<field ref="objects/objects/box_fruitcrate/box_fruitcrate_mesh/35860f46-02e3-11dc-8526-d93b5141cb6e" name="Mesh" />
+		<field ref="null" name="MeshShaderSet" />
+	</instance>
+</partition>
